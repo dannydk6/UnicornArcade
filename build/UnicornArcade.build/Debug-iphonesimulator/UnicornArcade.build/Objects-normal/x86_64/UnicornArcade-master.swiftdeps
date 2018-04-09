@@ -1,0 +1,15 @@
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "57833cc3ed97095ea4664d1476b071e1"
+build_time: [1523253022, 425611000]
+inputs:
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/PlayerBullet.swift": [1523246540, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameScene.swift": [1523253020, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/StartGameScene.swift": [1523252951, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/LevelCompleteScene.swift": [1523250319, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Invader.swift": [1523246513, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Bullet.swift": [1523228962, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Utilities.swift": [1523244193, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameViewController.swift": [1523225268, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Player.swift": [1523252594, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/AppDelegate.swift": [1523219409, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/InvaderBullet.swift": [1523245873, 0]

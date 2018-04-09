@@ -8,19 +8,42 @@
 
 /* Begin PBXBuildFile section */
 		6C961F91207AB35100989EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961F90207AB35100989EB7 /* AppDelegate.swift */; };
-		6C961F93207AB35100989EB7 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C961F92207AB35100989EB7 /* GameScene.sks */; };
 		6C961F95207AB35100989EB7 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C961F94207AB35100989EB7 /* Actions.sks */; };
 		6C961F97207AB35100989EB7 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961F96207AB35100989EB7 /* GameScene.swift */; };
 		6C961F99207AB35100989EB7 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961F98207AB35100989EB7 /* GameViewController.swift */; };
 		6C961F9C207AB35100989EB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C961F9A207AB35100989EB7 /* Main.storyboard */; };
 		6C961F9E207AB35100989EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C961F9D207AB35100989EB7 /* Assets.xcassets */; };
 		6C961FA1207AB35100989EB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C961F9F207AB35100989EB7 /* LaunchScreen.storyboard */; };
+		6C961FA9207AB5D800989EB7 /* StartGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FA8207AB5D800989EB7 /* StartGameScene.swift */; };
+		6C961FB9207AB92100989EB7 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FAA207AB92100989EB7 /* spark.png */; };
+		6C961FBA207AB92100989EB7 /* invader2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FAC207AB92100989EB7 /* invader2.png */; };
+		6C961FBB207AB92100989EB7 /* newgamebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FAD207AB92100989EB7 /* newgamebtn.png */; };
+		6C961FBC207AB92100989EB7 /* invader3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FAE207AB92100989EB7 /* invader3.png */; };
+		6C961FBD207AB92100989EB7 /* invader1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FAF207AB92100989EB7 /* invader1.png */; };
+		6C961FBE207AB92100989EB7 /* player2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB0207AB92100989EB7 /* player2.png */; };
+		6C961FBF207AB92100989EB7 /* laser.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB1207AB92100989EB7 /* laser.png */; };
+		6C961FC0207AB92100989EB7 /* player1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB2207AB92100989EB7 /* player1.png */; };
+		6C961FC1207AB92100989EB7 /* start_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB3207AB92100989EB7 /* start_btn.png */; };
+		6C961FC2207AB92100989EB7 /* laser.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB4207AB92100989EB7 /* laser.mp3 */; };
+		6C961FC3207AB92100989EB7 /* nextlevelbtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB5207AB92100989EB7 /* nextlevelbtn.png */; };
+		6C961FC4207AB92100989EB7 /* CONQUEST.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB6207AB92100989EB7 /* CONQUEST.ttf */; };
+		6C961FC5207AB92100989EB7 /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB7207AB92100989EB7 /* ufo.png */; };
+		6C961FC6207AB92100989EB7 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FB8207AB92100989EB7 /* star.png */; };
+		6C961FC8207AD14600989EB7 /* Invader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FC7207AD14600989EB7 /* Invader.swift */; };
+		6C961FCA207AD59E00989EB7 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FC9207AD59E00989EB7 /* Player.swift */; };
+		6C961FCC207AD77E00989EB7 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FCB207AD77E00989EB7 /* Bullet.swift */; };
+		6C961FCE207B05D600989EB7 /* InvaderBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FCD207B05D600989EB7 /* InvaderBullet.swift */; };
+		6C961FD0207B063900989EB7 /* PlayerBullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FCF207B063900989EB7 /* PlayerBullet.swift */; };
+		6C961FD4207B141D00989EB7 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FD3207B141D00989EB7 /* Utilities.swift */; };
+		6C961FD6207B167E00989EB7 /* unicorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FD5207B167E00989EB7 /* unicorn.png */; };
+		6C961FD8207B17E100989EB7 /* unicorn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FD7207B17E100989EB7 /* unicorn2.png */; };
+		6C961FDA207B288000989EB7 /* LevelCompleteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */; };
+		6C961FDE207B359E00989EB7 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FDD207B359E00989EB7 /* StarField.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C961F8D207AB35100989EB7 /* UnicornArcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicornArcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C961F90207AB35100989EB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6C961F92207AB35100989EB7 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		6C961F94207AB35100989EB7 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		6C961F96207AB35100989EB7 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		6C961F98207AB35100989EB7 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +51,31 @@
 		6C961F9D207AB35100989EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C961FA0207AB35100989EB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C961FA2207AB35100989EB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C961FA8207AB5D800989EB7 /* StartGameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartGameScene.swift; sourceTree = "<group>"; };
+		6C961FAA207AB92100989EB7 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		6C961FAC207AB92100989EB7 /* invader2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader2.png; sourceTree = "<group>"; };
+		6C961FAD207AB92100989EB7 /* newgamebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newgamebtn.png; sourceTree = "<group>"; };
+		6C961FAE207AB92100989EB7 /* invader3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader3.png; sourceTree = "<group>"; };
+		6C961FAF207AB92100989EB7 /* invader1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = invader1.png; sourceTree = "<group>"; };
+		6C961FB0207AB92100989EB7 /* player2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player2.png; sourceTree = "<group>"; };
+		6C961FB1207AB92100989EB7 /* laser.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = laser.png; sourceTree = "<group>"; };
+		6C961FB2207AB92100989EB7 /* player1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = player1.png; sourceTree = "<group>"; };
+		6C961FB3207AB92100989EB7 /* start_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_btn.png; sourceTree = "<group>"; };
+		6C961FB4207AB92100989EB7 /* laser.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = laser.mp3; sourceTree = "<group>"; };
+		6C961FB5207AB92100989EB7 /* nextlevelbtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nextlevelbtn.png; sourceTree = "<group>"; };
+		6C961FB6207AB92100989EB7 /* CONQUEST.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CONQUEST.ttf; sourceTree = "<group>"; };
+		6C961FB7207AB92100989EB7 /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ufo.png; sourceTree = "<group>"; };
+		6C961FB8207AB92100989EB7 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		6C961FC7207AD14600989EB7 /* Invader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invader.swift; sourceTree = "<group>"; };
+		6C961FC9207AD59E00989EB7 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		6C961FCB207AD77E00989EB7 /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		6C961FCD207B05D600989EB7 /* InvaderBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvaderBullet.swift; sourceTree = "<group>"; };
+		6C961FCF207B063900989EB7 /* PlayerBullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBullet.swift; sourceTree = "<group>"; };
+		6C961FD3207B141D00989EB7 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		6C961FD5207B167E00989EB7 /* unicorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicorn.png; sourceTree = "<group>"; };
+		6C961FD7207B17E100989EB7 /* unicorn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicorn2.png; sourceTree = "<group>"; };
+		6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCompleteScene.swift; sourceTree = "<group>"; };
+		6C961FDD207B359E00989EB7 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = StarField.sks; path = "../../../../Downloads/SpriteKitSwift-SpaceInvaders4-master/MobileTutsInvaderz/StarField.sks"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +109,48 @@
 			isa = PBXGroup;
 			children = (
 				6C961F90207AB35100989EB7 /* AppDelegate.swift */,
-				6C961F92207AB35100989EB7 /* GameScene.sks */,
 				6C961F94207AB35100989EB7 /* Actions.sks */,
 				6C961F96207AB35100989EB7 /* GameScene.swift */,
+				6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */,
+				6C961FCB207AD77E00989EB7 /* Bullet.swift */,
+				6C961FDD207B359E00989EB7 /* StarField.sks */,
+				6C961FCD207B05D600989EB7 /* InvaderBullet.swift */,
+				6C961FCF207B063900989EB7 /* PlayerBullet.swift */,
+				6C961FC9207AD59E00989EB7 /* Player.swift */,
 				6C961F98207AB35100989EB7 /* GameViewController.swift */,
+				6C961FA8207AB5D800989EB7 /* StartGameScene.swift */,
+				6C961FC7207AD14600989EB7 /* Invader.swift */,
+				6C961FD3207B141D00989EB7 /* Utilities.swift */,
 				6C961F9A207AB35100989EB7 /* Main.storyboard */,
 				6C961F9D207AB35100989EB7 /* Assets.xcassets */,
+				6C961FAB207AB92100989EB7 /* images */,
 				6C961F9F207AB35100989EB7 /* LaunchScreen.storyboard */,
 				6C961FA2207AB35100989EB7 /* Info.plist */,
 			);
 			path = UnicornArcade;
+			sourceTree = "<group>";
+		};
+		6C961FAB207AB92100989EB7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				6C961FD5207B167E00989EB7 /* unicorn.png */,
+				6C961FAA207AB92100989EB7 /* spark.png */,
+				6C961FAD207AB92100989EB7 /* newgamebtn.png */,
+				6C961FAF207AB92100989EB7 /* invader1.png */,
+				6C961FAC207AB92100989EB7 /* invader2.png */,
+				6C961FAE207AB92100989EB7 /* invader3.png */,
+				6C961FD7207B17E100989EB7 /* unicorn2.png */,
+				6C961FB2207AB92100989EB7 /* player1.png */,
+				6C961FB0207AB92100989EB7 /* player2.png */,
+				6C961FB1207AB92100989EB7 /* laser.png */,
+				6C961FB3207AB92100989EB7 /* start_btn.png */,
+				6C961FB5207AB92100989EB7 /* nextlevelbtn.png */,
+				6C961FB4207AB92100989EB7 /* laser.mp3 */,
+				6C961FB6207AB92100989EB7 /* CONQUEST.ttf */,
+				6C961FB7207AB92100989EB7 /* ufo.png */,
+				6C961FB8207AB92100989EB7 /* star.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,10 +211,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C961FC2207AB92100989EB7 /* laser.mp3 in Resources */,
+				6C961FC3207AB92100989EB7 /* nextlevelbtn.png in Resources */,
+				6C961FC0207AB92100989EB7 /* player1.png in Resources */,
+				6C961FB9207AB92100989EB7 /* spark.png in Resources */,
 				6C961F9C207AB35100989EB7 /* Main.storyboard in Resources */,
-				6C961F93207AB35100989EB7 /* GameScene.sks in Resources */,
 				6C961F9E207AB35100989EB7 /* Assets.xcassets in Resources */,
+				6C961FC1207AB92100989EB7 /* start_btn.png in Resources */,
+				6C961FD8207B17E100989EB7 /* unicorn2.png in Resources */,
+				6C961FBC207AB92100989EB7 /* invader3.png in Resources */,
+				6C961FBD207AB92100989EB7 /* invader1.png in Resources */,
+				6C961FC5207AB92100989EB7 /* ufo.png in Resources */,
+				6C961FBB207AB92100989EB7 /* newgamebtn.png in Resources */,
+				6C961FC6207AB92100989EB7 /* star.png in Resources */,
+				6C961FC4207AB92100989EB7 /* CONQUEST.ttf in Resources */,
+				6C961FDE207B359E00989EB7 /* StarField.sks in Resources */,
 				6C961FA1207AB35100989EB7 /* LaunchScreen.storyboard in Resources */,
+				6C961FBE207AB92100989EB7 /* player2.png in Resources */,
+				6C961FD6207B167E00989EB7 /* unicorn.png in Resources */,
+				6C961FBA207AB92100989EB7 /* invader2.png in Resources */,
+				6C961FBF207AB92100989EB7 /* laser.png in Resources */,
 				6C961F95207AB35100989EB7 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,9 +242,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C961FD0207B063900989EB7 /* PlayerBullet.swift in Sources */,
 				6C961F97207AB35100989EB7 /* GameScene.swift in Sources */,
+				6C961FA9207AB5D800989EB7 /* StartGameScene.swift in Sources */,
+				6C961FDA207B288000989EB7 /* LevelCompleteScene.swift in Sources */,
+				6C961FC8207AD14600989EB7 /* Invader.swift in Sources */,
+				6C961FCC207AD77E00989EB7 /* Bullet.swift in Sources */,
+				6C961FD4207B141D00989EB7 /* Utilities.swift in Sources */,
 				6C961F99207AB35100989EB7 /* GameViewController.swift in Sources */,
+				6C961FCA207AD59E00989EB7 /* Player.swift in Sources */,
 				6C961F91207AB35100989EB7 /* AppDelegate.swift in Sources */,
+				6C961FCE207B05D600989EB7 /* InvaderBullet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +399,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 739D6R628V;
 				INFOPLIST_FILE = UnicornArcade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cs.nyu.UnicornArcade;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.UnicornArcade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,11 +418,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 739D6R628V;
 				INFOPLIST_FILE = UnicornArcade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cs.nyu.UnicornArcade;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.UnicornArcade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
