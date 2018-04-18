@@ -38,7 +38,7 @@
 		6C961FD6207B167E00989EB7 /* unicorn.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FD5207B167E00989EB7 /* unicorn.png */; };
 		6C961FD8207B17E100989EB7 /* unicorn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FD7207B17E100989EB7 /* unicorn2.png */; };
 		6C961FDA207B288000989EB7 /* LevelCompleteScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */; };
-		6C961FDE207B359E00989EB7 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = 6C961FDD207B359E00989EB7 /* StarField.sks */; };
+		AA133C502087D4F900844E69 /* StarField.sks in Resources */ = {isa = PBXBuildFile; fileRef = AA133C4F2087D4F900844E69 /* StarField.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,7 +75,7 @@
 		6C961FD5207B167E00989EB7 /* unicorn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicorn.png; sourceTree = "<group>"; };
 		6C961FD7207B17E100989EB7 /* unicorn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unicorn2.png; sourceTree = "<group>"; };
 		6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelCompleteScene.swift; sourceTree = "<group>"; };
-		6C961FDD207B359E00989EB7 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = StarField.sks; path = "../../../../Downloads/SpriteKitSwift-SpaceInvaders4-master/MobileTutsInvaderz/StarField.sks"; sourceTree = "<group>"; };
+		AA133C4F2087D4F900844E69 /* StarField.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StarField.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 				6C961F96207AB35100989EB7 /* GameScene.swift */,
 				6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */,
 				6C961FCB207AD77E00989EB7 /* Bullet.swift */,
-				6C961FDD207B359E00989EB7 /* StarField.sks */,
+				AA133C4F2087D4F900844E69 /* StarField.sks */,
 				6C961FCD207B05D600989EB7 /* InvaderBullet.swift */,
 				6C961FCF207B063900989EB7 /* PlayerBullet.swift */,
 				6C961FC9207AD59E00989EB7 /* Player.swift */,
@@ -225,11 +225,11 @@
 				6C961FBB207AB92100989EB7 /* newgamebtn.png in Resources */,
 				6C961FC6207AB92100989EB7 /* star.png in Resources */,
 				6C961FC4207AB92100989EB7 /* CONQUEST.ttf in Resources */,
-				6C961FDE207B359E00989EB7 /* StarField.sks in Resources */,
 				6C961FA1207AB35100989EB7 /* LaunchScreen.storyboard in Resources */,
 				6C961FBE207AB92100989EB7 /* player2.png in Resources */,
 				6C961FD6207B167E00989EB7 /* unicorn.png in Resources */,
 				6C961FBA207AB92100989EB7 /* invader2.png in Resources */,
+				AA133C502087D4F900844E69 /* StarField.sks in Resources */,
 				6C961FBF207AB92100989EB7 /* laser.png in Resources */,
 				6C961F95207AB35100989EB7 /* Actions.sks in Resources */,
 			);
