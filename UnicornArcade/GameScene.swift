@@ -18,6 +18,7 @@ struct CollisionCategories{
     static let InvaderBullet: UInt32 = 0x1 << 2
     static let PlayerBullet: UInt32 = 0x1 << 3
     static let EdgeBody: UInt32 = 0x1 << 4
+    static let Obstacle: UInt32 = 0x1 << 5
 }
 
 // The main game scene. Acts as a delegate for physics collisions.
