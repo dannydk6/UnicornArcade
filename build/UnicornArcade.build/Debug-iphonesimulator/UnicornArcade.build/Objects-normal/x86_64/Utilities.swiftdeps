@@ -1,15 +1,19 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "squareNum"
 provides-nominal:
 provides-member:
 - ["Sa", ""]
 - ["Sa", "randomElement"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "*"
 - "Array"
+- "CGFloat"
 - !private "Int"
 - !private "UInt32"
 - !private "arc4random_uniform"
+- "squareNum"
 depends-member:
 - ["Sa", "Element"]
 - !private ["Sa", "Int"]
@@ -195,4 +199,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0d1d91bb140c9a06923819d010c7c40f"
+interface-hash: "f8cb10a9ead54f7625b69d2cb2ca0ad1"

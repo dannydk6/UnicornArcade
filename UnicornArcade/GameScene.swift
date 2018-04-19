@@ -23,7 +23,8 @@ struct CollisionCategories{
 
 // The main game scene. Acts as a delegate for physics collisions.
 class GameScene: SKScene, SKPhysicsContactDelegate {
-    
+    // How many points per second the unicorn should travel
+    let speedPPS = CGFloat(300)
     let rowsOfInvaders = 3
     var invaderSpeed = 2
     let leftBounds = CGFloat(30)
@@ -79,7 +80,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let touch = touches.first!
         let touchLocation = touch.location(in: self)
         print("Touch Location \(touchLocation.x), \(touchLocation.y)")
-        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: self.player.position.y), duration:1.0)
+        
+        let duration = (squareNum(number: (touchLocation.x - self.player.position.x)).squareRoot())/speedPPS
+        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: self.player.position.y), duration:TimeInterval(duration))
         self.player.run(move)
         
     }
