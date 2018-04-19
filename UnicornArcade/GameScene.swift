@@ -24,7 +24,8 @@ struct CollisionCategories{
 // The main game scene. Acts as a delegate for physics collisions.
 class GameScene: SKScene, SKPhysicsContactDelegate {
     // How many points per second the unicorn should travel
-    let speedPPS = CGFloat(300)
+    var playerY = CGFloat(0)
+    let speedPPS = CGFloat(500)
     let rowsOfInvaders = 3
     var invaderSpeed = 2
     let leftBounds = CGFloat(30)
@@ -69,6 +70,29 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         //add initial cloud to scene
         setupCloud();
+        
+        // Set up score
+        let winner = SKLabelNode(fontNamed: "Chalkduster")
+        winner.text = "0"
+        winner.fontSize = 50
+        winner.fontColor = SKColor.lightGray
+        winner.position = CGPoint(x: frame.width-40, y: frame.height-50)
+        winner.zPosition = 100
+        
+        addChild(winner)
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
+        /* Called when a touch moves */
+        // Unwrap to UITouch object
+        let touch = touches.first!
+        let touchLocation = touch.location(in: self)
+        print("Touch Location \(touchLocation.x), \(touchLocation.y)")
+        
+        let duration = (squareNum(number: (touchLocation.x - self.player.position.x)).squareRoot())/speedPPS
+        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: playerY), duration:TimeInterval(duration))
+        self.player.run(move)
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -82,7 +106,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         print("Touch Location \(touchLocation.x), \(touchLocation.y)")
         
         let duration = (squareNum(number: (touchLocation.x - self.player.position.x)).squareRoot())/speedPPS
-        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: self.player.position.y), duration:TimeInterval(duration))
+        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: playerY), duration:TimeInterval(duration))
         self.player.run(move)
         
     }
@@ -208,7 +232,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     // Initiate the player character at the bottom of the screen.
     func setupPlayer(){
-        player.position = CGPoint(x:self.frame.midX, y:player.size.height/2 + 10)
+        playerY = player.size.height/2 + 10
+        player.position = CGPoint(x:self.frame.midX, y:playerY)
         addChild(player)
     }
     
