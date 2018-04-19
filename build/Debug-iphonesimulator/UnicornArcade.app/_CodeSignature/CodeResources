@@ -10,7 +10,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		fGKfUh00Wf+CJbRpYNqtIaU7tyc=
+		caVEov0f8kKC6pEorTASykf66sE=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UPcpM+rZx+Q+kOEwuVGJfM5G9Rc=
+		pWy4i0UC7Kxb/raDz76ICwyZ6Mk=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -134,11 +134,15 @@
 		</data>
 		<key>StarField.sks</key>
 		<data>
-		qWWV4oMil58IbEhmKLzpVt6r0pM=
+		WNAcLc5RVgoEY+dM0pVtrfCrqUM=
 		</data>
 		<key>bigCloud1.png</key>
 		<data>
 		0NhDFrORMv7RjxzWGJ7/wtHQw78=
+		</data>
+		<key>blueSky.png</key>
+		<data>
+		P7j9pl/79nByiQFJ/WxprooZK/Y=
 		</data>
 		<key>invader1.png</key>
 		<data>
@@ -163,6 +167,10 @@
 		<key>libswiftRemoteMirror.dylib</key>
 		<data>
 		KXPuhJWVj384i4gmYkXy8E9WM40=
+		</data>
+		<key>mediumCloud1.png</key>
+		<data>
+		m+cYUZ0i+KbksMczmDRosCWZTVA=
 		</data>
 		<key>newgamebtn.png</key>
 		<data>
@@ -222,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fGKfUh00Wf+CJbRpYNqtIaU7tyc=
+			caVEov0f8kKC6pEorTASykf66sE=
 			</data>
 			<key>hash2</key>
 			<data>
-			HX0+U9rBMn2GEYMmwYiKpRFuVWCvdv9ZAwGVwbn6XIc=
+			zi6BrEk0S6DZyl6DBQ5Y058ey1VZfqH0cr7uL5r4dVs=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
@@ -541,11 +549,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qWWV4oMil58IbEhmKLzpVt6r0pM=
+			WNAcLc5RVgoEY+dM0pVtrfCrqUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			tqpsD20gbEMu7+eTpQtsL6igM6n4qomiu8Qk3iIVO0g=
+			KoEAFf25ZFevAhLtoZCjIPv6TmLJdT04jOVEsUbzSLg=
 			</data>
 		</dict>
 		<key>bigCloud1.png</key>
@@ -557,6 +565,17 @@
 			<key>hash2</key>
 			<data>
 			jBNIR8/kok3hD6fkWluWryl7KIgZrtrYdC2Rs8Lg4/I=
+			</data>
+		</dict>
+		<key>blueSky.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			P7j9pl/79nByiQFJ/WxprooZK/Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			aCjtCs/Wv7eR1Cs/oep9hDdiSs0dhHlTYT4H9J8MZ+g=
 			</data>
 		</dict>
 		<key>invader1.png</key>
@@ -623,6 +642,17 @@
 			<key>hash2</key>
 			<data>
 			E6imofsK1m6yFqU1x9vPZZT13ZGjMx7L6Q1PVL03hOk=
+			</data>
+		</dict>
+		<key>mediumCloud1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			m+cYUZ0i+KbksMczmDRosCWZTVA=
+			</data>
+			<key>hash2</key>
+			<data>
+			rG/r4RweTvcrC49HoHQ7EUh2r0xR7W6F3sSpPbXraWw=
 			</data>
 		</dict>
 		<key>newgamebtn.png</key>

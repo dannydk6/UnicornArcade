@@ -23,6 +23,11 @@ struct CollisionCategories{
 
 // The main game scene. Acts as a delegate for physics collisions.
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    var background = SKSpriteNode(imageNamed: "blueSky")
+    
+    // Right now, just the number of clouds you have passed
+    var score = 0
+
     // How many points per second the unicorn should travel
     var playerY = CGFloat(0)
     let speedPPS = CGFloat(500)
@@ -35,6 +40,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     let maxLevels = 3
     let motionManager: CMMotionManager = CMMotionManager()
     var accelerationX: CGFloat = 0.0
+    let scoreText = SKLabelNode(fontNamed: "Conquest")
     
     //to hold if we already added one cloud for a cloud we are going to replace
     var didAlreadyAddCloud = [Bool]();
@@ -46,10 +52,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // This code is run when the view is switched in to.
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
+        
+        /*
         let starField = SKEmitterNode(fileNamed: "StarField")
         starField?.position = CGPoint(x:size.width/2,y:size.height/2)
         starField?.zPosition = -1000
         addChild(starField!)
+         */
         
         // The gravity and contact delegate must be set.
         self.physicsWorld.gravity = CGVector(dx:0,dy:0)
@@ -72,14 +81,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         setupCloud();
         
         // Set up score
-        let winner = SKLabelNode(fontNamed: "Chalkduster")
-        winner.text = "0"
-        winner.fontSize = 50
-        winner.fontColor = SKColor.lightGray
-        winner.position = CGPoint(x: frame.width-40, y: frame.height-50)
-        winner.zPosition = 100
+        scoreText.text = "\(score)"
+        scoreText.fontSize = 40
+        scoreText.fontColor = SKColor.lightGray
+        scoreText.position = CGPoint(x: frame.width-40, y: frame.height-50)
+        scoreText.zPosition = 1000
         
-        addChild(winner)
+        addChild(scoreText)
+        
+        background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
+        background.zPosition = -5000
+        addChild(background)
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -195,13 +207,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //removes cloud node from clouds array from and the boolean corresponding value in didAlreadyAddCloud
     func deleteCloud(cloudToRemove: Cloud) {
+        score += 1
+        scoreText.text = "\(score)"
         
         cloudToRemove.removeFromParent();
+        
         
         if let index = clouds.index(of: cloudToRemove) {
             clouds.remove(at: index)
             didAlreadyAddCloud.remove(at: index);
         }
+        
+        
 
     }
 

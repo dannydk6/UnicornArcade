@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0E926C2088E96600CF7122 /* blueSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E926B2088E96600CF7122 /* blueSky.png */; };
+		6C0E926E2088EB2900CF7122 /* mediumCloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E926D2088EB2900CF7122 /* mediumCloud1.png */; };
 		6C58C0A62087EC52007B506B /* bigCloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C58C0A52087EC51007B506B /* bigCloud1.png */; };
 		6C58C0A82087EC73007B506B /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C58C0A72087EC73007B506B /* Cloud.swift */; };
 		6C961F91207AB35100989EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961F90207AB35100989EB7 /* AppDelegate.swift */; };
@@ -44,6 +46,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0E926B2088E96600CF7122 /* blueSky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueSky.png; sourceTree = "<group>"; };
+		6C0E926D2088EB2900CF7122 /* mediumCloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediumCloud1.png; sourceTree = "<group>"; };
 		6C58C0A52087EC51007B506B /* bigCloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigCloud1.png; sourceTree = "<group>"; };
 		6C58C0A72087EC73007B506B /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		6C961F8D207AB35100989EB7 /* UnicornArcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicornArcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,7 @@
 				6C961FA8207AB5D800989EB7 /* StartGameScene.swift */,
 				6C961FC7207AD14600989EB7 /* Invader.swift */,
 				6C961FD3207B141D00989EB7 /* Utilities.swift */,
+				6C961FB6207AB92100989EB7 /* CONQUEST.ttf */,
 				6C961F9A207AB35100989EB7 /* Main.storyboard */,
 				6C961F9D207AB35100989EB7 /* Assets.xcassets */,
 				6C961FAB207AB92100989EB7 /* images */,
@@ -138,11 +143,13 @@
 		6C961FAB207AB92100989EB7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				6C0E926B2088E96600CF7122 /* blueSky.png */,
 				6C961FD5207B167E00989EB7 /* unicorn.png */,
 				6C58C0A52087EC51007B506B /* bigCloud1.png */,
 				6C961FAA207AB92100989EB7 /* spark.png */,
 				6C961FAD207AB92100989EB7 /* newgamebtn.png */,
 				6C961FAF207AB92100989EB7 /* invader1.png */,
+				6C0E926D2088EB2900CF7122 /* mediumCloud1.png */,
 				6C961FAC207AB92100989EB7 /* invader2.png */,
 				6C961FAE207AB92100989EB7 /* invader3.png */,
 				6C961FD7207B17E100989EB7 /* unicorn2.png */,
@@ -152,7 +159,6 @@
 				6C961FB3207AB92100989EB7 /* start_btn.png */,
 				6C961FB5207AB92100989EB7 /* nextlevelbtn.png */,
 				6C961FB4207AB92100989EB7 /* laser.mp3 */,
-				6C961FB6207AB92100989EB7 /* CONQUEST.ttf */,
 				6C961FB7207AB92100989EB7 /* ufo.png */,
 				6C961FB8207AB92100989EB7 /* star.png */,
 			);
@@ -221,6 +227,7 @@
 				6C961FC3207AB92100989EB7 /* nextlevelbtn.png in Resources */,
 				6C961FC0207AB92100989EB7 /* player1.png in Resources */,
 				6C961FB9207AB92100989EB7 /* spark.png in Resources */,
+				6C0E926E2088EB2900CF7122 /* mediumCloud1.png in Resources */,
 				6C961F9C207AB35100989EB7 /* Main.storyboard in Resources */,
 				6C961F9E207AB35100989EB7 /* Assets.xcassets in Resources */,
 				6C961FC1207AB92100989EB7 /* start_btn.png in Resources */,
@@ -236,6 +243,7 @@
 				6C961FBE207AB92100989EB7 /* player2.png in Resources */,
 				6C961FD6207B167E00989EB7 /* unicorn.png in Resources */,
 				6C961FBA207AB92100989EB7 /* invader2.png in Resources */,
+				6C0E926C2088E96600CF7122 /* blueSky.png in Resources */,
 				AA133C502087D4F900844E69 /* StarField.sks in Resources */,
 				6C961FBF207AB92100989EB7 /* laser.png in Resources */,
 				6C961F95207AB35100989EB7 /* Actions.sks in Resources */,

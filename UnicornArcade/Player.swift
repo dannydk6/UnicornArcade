@@ -50,6 +50,7 @@ class Player: SKSpriteNode {
         
         // Do not rotate sprite on collision
         self.physicsBody?.allowsRotation = false
+        self.setScale(0.75);
         animate()
     }
     

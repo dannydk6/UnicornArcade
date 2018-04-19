@@ -58,24 +58,22 @@ depends-top-level:
 - "Player"
 - !private "SKAction"
 - !private "SKColor"
-- !private "SKEmitterNode"
-- !private "SKLabelNode"
+- "SKLabelNode"
 - !private "SKPhysicsBody"
 - "SKPhysicsContact"
 - "SKPhysicsContactDelegate"
 - "SKScene"
-- !private "SKSpriteNode"
+- "SKSpriteNode"
 - !private "SKTransition"
 - "SKView"
 - "Set"
 - !private "StartGameScene"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - "TimeInterval"
 - "UIEvent"
 - !private "UIScreen"
 - "UITouch"
 - "UInt32"
-- !private "UnicodeScalarType"
 - !private "arc4random_uniform"
 - "findIndex"
 - "invaderNum"
@@ -111,6 +109,7 @@ depends-member:
 - !private ["SC7CGPointV", "y"]
 - !private ["SC6CGRectV", "height"]
 - !private ["SC6CGRectV", "midX"]
+- !private ["SC6CGRectV", "size"]
 - !private ["SC6CGRectV", "width"]
 - !private ["SC6CGSizeV", "height"]
 - !private ["SC6CGSizeV", "width"]
@@ -135,9 +134,9 @@ depends-member:
 - ["s7CVarArgP", "Player"]
 - !private ["s7CVarArgP", "SKAction"]
 - !private ["s7CVarArgP", "SKColor"]
-- !private ["s7CVarArgP", "SKEmitterNode"]
-- !private ["s7CVarArgP", "SKLabelNode"]
+- ["s7CVarArgP", "SKLabelNode"]
 - !private ["s7CVarArgP", "SKPhysicsBody"]
+- ["s7CVarArgP", "SKSpriteNode"]
 - !private ["s7CVarArgP", "SKTransition"]
 - !private ["s7CVarArgP", "StartGameScene"]
 - !private ["s7CVarArgP", "TimeInterval"]
@@ -151,6 +150,7 @@ depends-member:
 - !private ["s7CVarArgP", "addChild"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "arc4random_uniform"]
+- !private ["s7CVarArgP", "background"]
 - !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "black"]
 - !private ["s7CVarArgP", "bodyA"]
@@ -179,7 +179,6 @@ depends-member:
 - !private ["s7CVarArgP", "fontSize"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "gravity"]
-- !private ["s7CVarArgP", "green"]
 - !private ["s7CVarArgP", "index"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "invaderColumn"]
@@ -191,6 +190,7 @@ depends-member:
 - !private ["s7CVarArgP", "kill"]
 - !private ["s7CVarArgP", "leftBounds"]
 - !private ["s7CVarArgP", "levelComplete"]
+- !private ["s7CVarArgP", "lightGray"]
 - !private ["s7CVarArgP", "location"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "maxLevels"]
@@ -217,6 +217,8 @@ depends-member:
 - !private ["s7CVarArgP", "rowsOfInvaders"]
 - !private ["s7CVarArgP", "run"]
 - !private ["s7CVarArgP", "scaleMode"]
+- !private ["s7CVarArgP", "score"]
+- !private ["s7CVarArgP", "scoreText"]
 - !private ["s7CVarArgP", "sequence"]
 - !private ["s7CVarArgP", "setupAccelerometer"]
 - !private ["s7CVarArgP", "setupCloud"]
@@ -271,9 +273,9 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "Player"]
 - !private ["s28CustomDebugStringConvertibleP", "SKAction"]
 - !private ["s28CustomDebugStringConvertibleP", "SKColor"]
-- !private ["s28CustomDebugStringConvertibleP", "SKEmitterNode"]
-- !private ["s28CustomDebugStringConvertibleP", "SKLabelNode"]
+- ["s28CustomDebugStringConvertibleP", "SKLabelNode"]
 - !private ["s28CustomDebugStringConvertibleP", "SKPhysicsBody"]
+- ["s28CustomDebugStringConvertibleP", "SKSpriteNode"]
 - !private ["s28CustomDebugStringConvertibleP", "SKTransition"]
 - !private ["s28CustomDebugStringConvertibleP", "StartGameScene"]
 - !private ["s28CustomDebugStringConvertibleP", "TimeInterval"]
@@ -286,6 +288,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "addChild"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "arc4random_uniform"]
+- !private ["s28CustomDebugStringConvertibleP", "background"]
 - !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - !private ["s28CustomDebugStringConvertibleP", "bodyA"]
@@ -314,7 +317,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "fontSize"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "gravity"]
-- !private ["s28CustomDebugStringConvertibleP", "green"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "index"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -327,6 +329,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "kill"]
 - !private ["s28CustomDebugStringConvertibleP", "leftBounds"]
 - !private ["s28CustomDebugStringConvertibleP", "levelComplete"]
+- !private ["s28CustomDebugStringConvertibleP", "lightGray"]
 - !private ["s28CustomDebugStringConvertibleP", "location"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "maxLevels"]
@@ -354,6 +357,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "rowsOfInvaders"]
 - !private ["s28CustomDebugStringConvertibleP", "run"]
 - !private ["s28CustomDebugStringConvertibleP", "scaleMode"]
+- !private ["s28CustomDebugStringConvertibleP", "score"]
+- !private ["s28CustomDebugStringConvertibleP", "scoreText"]
 - !private ["s28CustomDebugStringConvertibleP", "sequence"]
 - !private ["s28CustomDebugStringConvertibleP", "setupAccelerometer"]
 - !private ["s28CustomDebugStringConvertibleP", "setupCloud"]
@@ -390,6 +395,7 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "width"]
 - !private ["s29CustomPlaygroundQuickLookableP", "x"]
 - !private ["s29CustomPlaygroundQuickLookableP", "y"]
+- !private ["s29CustomPlaygroundQuickLookableP", "zPosition"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "enumerated"]
@@ -402,6 +408,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "pointee"]
 - !private ["s17CustomReflectableP", "randomElement"]
 - !private ["s17CustomReflectableP", "remove"]
+- !private ["s17CustomReflectableP", "size"]
 - !private ["s17CustomReflectableP", "squareRoot"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "width"]
@@ -421,9 +428,9 @@ depends-member:
 - ["s23CustomStringConvertibleP", "Player"]
 - !private ["s23CustomStringConvertibleP", "SKAction"]
 - !private ["s23CustomStringConvertibleP", "SKColor"]
-- !private ["s23CustomStringConvertibleP", "SKEmitterNode"]
-- !private ["s23CustomStringConvertibleP", "SKLabelNode"]
+- ["s23CustomStringConvertibleP", "SKLabelNode"]
 - !private ["s23CustomStringConvertibleP", "SKPhysicsBody"]
+- ["s23CustomStringConvertibleP", "SKSpriteNode"]
 - !private ["s23CustomStringConvertibleP", "SKTransition"]
 - !private ["s23CustomStringConvertibleP", "StartGameScene"]
 - !private ["s23CustomStringConvertibleP", "TimeInterval"]
@@ -437,6 +444,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "addChild"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "arc4random_uniform"]
+- !private ["s23CustomStringConvertibleP", "background"]
 - !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "black"]
 - !private ["s23CustomStringConvertibleP", "bodyA"]
@@ -465,7 +473,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fontSize"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "gravity"]
-- !private ["s23CustomStringConvertibleP", "green"]
 - !private ["s23CustomStringConvertibleP", "index"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "invaderColumn"]
@@ -477,6 +484,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "kill"]
 - !private ["s23CustomStringConvertibleP", "leftBounds"]
 - !private ["s23CustomStringConvertibleP", "levelComplete"]
+- !private ["s23CustomStringConvertibleP", "lightGray"]
 - !private ["s23CustomStringConvertibleP", "location"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "maxLevels"]
@@ -502,6 +510,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "rowsOfInvaders"]
 - !private ["s23CustomStringConvertibleP", "run"]
 - !private ["s23CustomStringConvertibleP", "scaleMode"]
+- !private ["s23CustomStringConvertibleP", "score"]
+- !private ["s23CustomStringConvertibleP", "scoreText"]
 - !private ["s23CustomStringConvertibleP", "sequence"]
 - !private ["s23CustomStringConvertibleP", "setupAccelerometer"]
 - !private ["s23CustomStringConvertibleP", "setupCloud"]
@@ -529,6 +539,7 @@ depends-member:
 - !private ["s9DecodableP", "midX"]
 - !private ["s9DecodableP", "randomElement"]
 - !private ["s9DecodableP", "remove"]
+- !private ["s9DecodableP", "size"]
 - !private ["s9DecodableP", "squareRoot"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s9DecodableP", "width"]
@@ -546,6 +557,7 @@ depends-member:
 - !private ["s9EncodableP", "midX"]
 - !private ["s9EncodableP", "randomElement"]
 - !private ["s9EncodableP", "remove"]
+- !private ["s9EncodableP", "size"]
 - !private ["s9EncodableP", "squareRoot"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "width"]
@@ -565,9 +577,9 @@ depends-member:
 - ["s9EquatableP", "Player"]
 - !private ["s9EquatableP", "SKAction"]
 - !private ["s9EquatableP", "SKColor"]
-- !private ["s9EquatableP", "SKEmitterNode"]
-- !private ["s9EquatableP", "SKLabelNode"]
+- ["s9EquatableP", "SKLabelNode"]
 - !private ["s9EquatableP", "SKPhysicsBody"]
+- ["s9EquatableP", "SKSpriteNode"]
 - !private ["s9EquatableP", "SKTransition"]
 - !private ["s9EquatableP", "StartGameScene"]
 - !private ["s9EquatableP", "TimeInterval"]
@@ -581,6 +593,7 @@ depends-member:
 - !private ["s9EquatableP", "addChild"]
 - !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "arc4random_uniform"]
+- !private ["s9EquatableP", "background"]
 - !private ["s9EquatableP", "backgroundColor"]
 - !private ["s9EquatableP", "black"]
 - !private ["s9EquatableP", "bodyA"]
@@ -609,7 +622,6 @@ depends-member:
 - !private ["s9EquatableP", "fontSize"]
 - !private ["s9EquatableP", "frame"]
 - !private ["s9EquatableP", "gravity"]
-- !private ["s9EquatableP", "green"]
 - !private ["s9EquatableP", "height"]
 - !private ["s9EquatableP", "index"]
 - ["s9EquatableP", "init"]
@@ -622,6 +634,7 @@ depends-member:
 - !private ["s9EquatableP", "kill"]
 - !private ["s9EquatableP", "leftBounds"]
 - !private ["s9EquatableP", "levelComplete"]
+- !private ["s9EquatableP", "lightGray"]
 - !private ["s9EquatableP", "location"]
 - !private ["s9EquatableP", "main"]
 - !private ["s9EquatableP", "maxLevels"]
@@ -649,6 +662,8 @@ depends-member:
 - !private ["s9EquatableP", "rowsOfInvaders"]
 - !private ["s9EquatableP", "run"]
 - !private ["s9EquatableP", "scaleMode"]
+- !private ["s9EquatableP", "score"]
+- !private ["s9EquatableP", "scoreText"]
 - !private ["s9EquatableP", "sequence"]
 - !private ["s9EquatableP", "setupAccelerometer"]
 - !private ["s9EquatableP", "setupCloud"]
@@ -678,13 +693,13 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "remove"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "squareRoot"]
 - ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "squareRoot"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - ["s13FloatingPointP", "init"]
 - !private ["s13FloatingPointP", "squareRoot"]
@@ -702,11 +717,10 @@ depends-member:
 - ["13UnicornArcade9GameSceneC", "Player"]
 - !private ["13UnicornArcade9GameSceneC", "SKAction"]
 - !private ["13UnicornArcade9GameSceneC", "SKColor"]
-- !private ["13UnicornArcade9GameSceneC", "SKEmitterNode"]
-- !private ["13UnicornArcade9GameSceneC", "SKLabelNode"]
+- ["13UnicornArcade9GameSceneC", "SKLabelNode"]
 - !private ["13UnicornArcade9GameSceneC", "SKPhysicsBody"]
 - ["13UnicornArcade9GameSceneC", "SKPhysicsContact"]
-- !private ["13UnicornArcade9GameSceneC", "SKSpriteNode"]
+- ["13UnicornArcade9GameSceneC", "SKSpriteNode"]
 - !private ["13UnicornArcade9GameSceneC", "SKTransition"]
 - ["13UnicornArcade9GameSceneC", "SKView"]
 - ["13UnicornArcade9GameSceneC", "Set"]
@@ -719,6 +733,7 @@ depends-member:
 - ["13UnicornArcade9GameSceneC", "accelerationX"]
 - !private ["13UnicornArcade9GameSceneC", "addChild"]
 - !private ["13UnicornArcade9GameSceneC", "arc4random_uniform"]
+- ["13UnicornArcade9GameSceneC", "background"]
 - !private ["13UnicornArcade9GameSceneC", "backgroundColor"]
 - ["13UnicornArcade9GameSceneC", "checkClouds"]
 - ["13UnicornArcade9GameSceneC", "clouds"]
@@ -757,6 +772,8 @@ depends-member:
 - ["13UnicornArcade9GameSceneC", "rowsOfInvaders"]
 - !private ["13UnicornArcade9GameSceneC", "run"]
 - !private ["13UnicornArcade9GameSceneC", "scaleMode"]
+- ["13UnicornArcade9GameSceneC", "score"]
+- ["13UnicornArcade9GameSceneC", "scoreText"]
 - ["13UnicornArcade9GameSceneC", "setupAccelerometer"]
 - ["13UnicornArcade9GameSceneC", "setupCloud"]
 - ["13UnicornArcade9GameSceneC", "setupInvaders"]
@@ -782,9 +799,9 @@ depends-member:
 - ["s8HashableP", "Player"]
 - !private ["s8HashableP", "SKAction"]
 - !private ["s8HashableP", "SKColor"]
-- !private ["s8HashableP", "SKEmitterNode"]
-- !private ["s8HashableP", "SKLabelNode"]
+- ["s8HashableP", "SKLabelNode"]
 - !private ["s8HashableP", "SKPhysicsBody"]
+- ["s8HashableP", "SKSpriteNode"]
 - !private ["s8HashableP", "SKTransition"]
 - !private ["s8HashableP", "StartGameScene"]
 - !private ["s8HashableP", "TimeInterval"]
@@ -797,6 +814,7 @@ depends-member:
 - !private ["s8HashableP", "accelerometerUpdateInterval"]
 - !private ["s8HashableP", "addChild"]
 - !private ["s8HashableP", "arc4random_uniform"]
+- !private ["s8HashableP", "background"]
 - !private ["s8HashableP", "backgroundColor"]
 - !private ["s8HashableP", "black"]
 - !private ["s8HashableP", "bodyA"]
@@ -824,7 +842,6 @@ depends-member:
 - !private ["s8HashableP", "fontSize"]
 - !private ["s8HashableP", "frame"]
 - !private ["s8HashableP", "gravity"]
-- !private ["s8HashableP", "green"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "invaderColumn"]
 - !private ["s8HashableP", "invaderNum"]
@@ -834,6 +851,7 @@ depends-member:
 - !private ["s8HashableP", "kill"]
 - !private ["s8HashableP", "leftBounds"]
 - !private ["s8HashableP", "levelComplete"]
+- !private ["s8HashableP", "lightGray"]
 - !private ["s8HashableP", "location"]
 - !private ["s8HashableP", "main"]
 - !private ["s8HashableP", "maxLevels"]
@@ -858,6 +876,8 @@ depends-member:
 - !private ["s8HashableP", "rowsOfInvaders"]
 - !private ["s8HashableP", "run"]
 - !private ["s8HashableP", "scaleMode"]
+- !private ["s8HashableP", "score"]
+- !private ["s8HashableP", "scoreText"]
 - !private ["s8HashableP", "sequence"]
 - !private ["s8HashableP", "setupAccelerometer"]
 - !private ["s8HashableP", "setupCloud"]
@@ -884,8 +904,8 @@ depends-member:
 - !private ["13UnicornArcade18LevelCompleteSceneC", "init"]
 - !private ["13UnicornArcade18LevelCompleteSceneC", "scaleMode"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s17MutableCollectionP", "enumerated"]
 - !private ["s17MutableCollectionP", "index"]
@@ -908,9 +928,9 @@ depends-member:
 - ["So8NSCodingP", "Player"]
 - !private ["So8NSCodingP", "SKAction"]
 - !private ["So8NSCodingP", "SKColor"]
-- !private ["So8NSCodingP", "SKEmitterNode"]
-- !private ["So8NSCodingP", "SKLabelNode"]
+- ["So8NSCodingP", "SKLabelNode"]
 - !private ["So8NSCodingP", "SKPhysicsBody"]
+- ["So8NSCodingP", "SKSpriteNode"]
 - !private ["So8NSCodingP", "SKTransition"]
 - !private ["So8NSCodingP", "StartGameScene"]
 - !private ["So8NSCodingP", "TimeInterval"]
@@ -921,6 +941,7 @@ depends-member:
 - !private ["So8NSCodingP", "accelerationX"]
 - !private ["So8NSCodingP", "addChild"]
 - !private ["So8NSCodingP", "arc4random_uniform"]
+- !private ["So8NSCodingP", "background"]
 - !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "black"]
 - !private ["So8NSCodingP", "categoryBitMask"]
@@ -942,7 +963,6 @@ depends-member:
 - !private ["So8NSCodingP", "fontSize"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "gravity"]
-- !private ["So8NSCodingP", "green"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "invaderColumn"]
 - !private ["So8NSCodingP", "invaderNum"]
@@ -952,6 +972,7 @@ depends-member:
 - !private ["So8NSCodingP", "kill"]
 - !private ["So8NSCodingP", "leftBounds"]
 - !private ["So8NSCodingP", "levelComplete"]
+- !private ["So8NSCodingP", "lightGray"]
 - !private ["So8NSCodingP", "maxLevels"]
 - !private ["So8NSCodingP", "motionManager"]
 - !private ["So8NSCodingP", "move"]
@@ -973,6 +994,8 @@ depends-member:
 - !private ["So8NSCodingP", "rowsOfInvaders"]
 - !private ["So8NSCodingP", "run"]
 - !private ["So8NSCodingP", "scaleMode"]
+- !private ["So8NSCodingP", "score"]
+- !private ["So8NSCodingP", "scoreText"]
 - !private ["So8NSCodingP", "sequence"]
 - !private ["So8NSCodingP", "setupAccelerometer"]
 - !private ["So8NSCodingP", "setupCloud"]
@@ -1000,9 +1023,9 @@ depends-member:
 - ["So9NSCopyingP", "Player"]
 - !private ["So9NSCopyingP", "SKAction"]
 - !private ["So9NSCopyingP", "SKColor"]
-- !private ["So9NSCopyingP", "SKEmitterNode"]
-- !private ["So9NSCopyingP", "SKLabelNode"]
+- ["So9NSCopyingP", "SKLabelNode"]
 - !private ["So9NSCopyingP", "SKPhysicsBody"]
+- ["So9NSCopyingP", "SKSpriteNode"]
 - !private ["So9NSCopyingP", "SKTransition"]
 - !private ["So9NSCopyingP", "StartGameScene"]
 - !private ["So9NSCopyingP", "TimeInterval"]
@@ -1013,6 +1036,7 @@ depends-member:
 - !private ["So9NSCopyingP", "accelerationX"]
 - !private ["So9NSCopyingP", "addChild"]
 - !private ["So9NSCopyingP", "arc4random_uniform"]
+- !private ["So9NSCopyingP", "background"]
 - !private ["So9NSCopyingP", "backgroundColor"]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "categoryBitMask"]
@@ -1033,7 +1057,6 @@ depends-member:
 - !private ["So9NSCopyingP", "fontColor"]
 - !private ["So9NSCopyingP", "fontSize"]
 - !private ["So9NSCopyingP", "frame"]
-- !private ["So9NSCopyingP", "green"]
 - ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "invaderColumn"]
 - !private ["So9NSCopyingP", "invaderNum"]
@@ -1043,6 +1066,7 @@ depends-member:
 - !private ["So9NSCopyingP", "kill"]
 - !private ["So9NSCopyingP", "leftBounds"]
 - !private ["So9NSCopyingP", "levelComplete"]
+- !private ["So9NSCopyingP", "lightGray"]
 - !private ["So9NSCopyingP", "maxLevels"]
 - !private ["So9NSCopyingP", "motionManager"]
 - !private ["So9NSCopyingP", "move"]
@@ -1063,6 +1087,8 @@ depends-member:
 - !private ["So9NSCopyingP", "rowsOfInvaders"]
 - !private ["So9NSCopyingP", "run"]
 - !private ["So9NSCopyingP", "scaleMode"]
+- !private ["So9NSCopyingP", "score"]
+- !private ["So9NSCopyingP", "scoreText"]
 - !private ["So9NSCopyingP", "sequence"]
 - !private ["So9NSCopyingP", "setupAccelerometer"]
 - !private ["So9NSCopyingP", "setupCloud"]
@@ -1077,9 +1103,9 @@ depends-member:
 - !private ["So9NSCopyingP", "wait"]
 - !private ["So9NSCopyingP", "zPosition"]
 - !private ["So21NSItemProviderReadingP", "black"]
-- !private ["So21NSItemProviderReadingP", "green"]
+- !private ["So21NSItemProviderReadingP", "lightGray"]
 - !private ["So21NSItemProviderWritingP", "black"]
-- !private ["So21NSItemProviderWritingP", "green"]
+- !private ["So21NSItemProviderWritingP", "lightGray"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
@@ -1094,11 +1120,10 @@ depends-member:
 - ["So8NSObjectC", "Player"]
 - !private ["So8NSObjectC", "SKAction"]
 - !private ["So8NSObjectC", "SKColor"]
-- !private ["So8NSObjectC", "SKEmitterNode"]
-- !private ["So8NSObjectC", "SKLabelNode"]
+- ["So8NSObjectC", "SKLabelNode"]
 - !private ["So8NSObjectC", "SKPhysicsBody"]
 - ["So8NSObjectC", "SKPhysicsContact"]
-- !private ["So8NSObjectC", "SKSpriteNode"]
+- ["So8NSObjectC", "SKSpriteNode"]
 - !private ["So8NSObjectC", "SKTransition"]
 - ["So8NSObjectC", "SKView"]
 - ["So8NSObjectC", "Set"]
@@ -1113,6 +1138,7 @@ depends-member:
 - !private ["So8NSObjectC", "accelerometerUpdateInterval"]
 - !private ["So8NSObjectC", "addChild"]
 - !private ["So8NSObjectC", "arc4random_uniform"]
+- ["So8NSObjectC", "background"]
 - !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "bodyA"]
@@ -1141,7 +1167,6 @@ depends-member:
 - !private ["So8NSObjectC", "fontSize"]
 - !private ["So8NSObjectC", "frame"]
 - !private ["So8NSObjectC", "gravity"]
-- !private ["So8NSObjectC", "green"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "invaderColumn"]
 - !private ["So8NSObjectC", "invaderNum"]
@@ -1152,6 +1177,7 @@ depends-member:
 - !private ["So8NSObjectC", "kill"]
 - ["So8NSObjectC", "leftBounds"]
 - ["So8NSObjectC", "levelComplete"]
+- !private ["So8NSObjectC", "lightGray"]
 - !private ["So8NSObjectC", "location"]
 - !private ["So8NSObjectC", "main"]
 - ["So8NSObjectC", "maxLevels"]
@@ -1176,6 +1202,8 @@ depends-member:
 - ["So8NSObjectC", "rowsOfInvaders"]
 - !private ["So8NSObjectC", "run"]
 - !private ["So8NSObjectC", "scaleMode"]
+- ["So8NSObjectC", "score"]
+- ["So8NSObjectC", "scoreText"]
 - !private ["So8NSObjectC", "sequence"]
 - ["So8NSObjectC", "setupAccelerometer"]
 - ["So8NSObjectC", "setupCloud"]
@@ -1207,9 +1235,9 @@ depends-member:
 - ["So16NSObjectProtocolP", "Player"]
 - !private ["So16NSObjectProtocolP", "SKAction"]
 - !private ["So16NSObjectProtocolP", "SKColor"]
-- !private ["So16NSObjectProtocolP", "SKEmitterNode"]
-- !private ["So16NSObjectProtocolP", "SKLabelNode"]
+- ["So16NSObjectProtocolP", "SKLabelNode"]
 - !private ["So16NSObjectProtocolP", "SKPhysicsBody"]
+- ["So16NSObjectProtocolP", "SKSpriteNode"]
 - !private ["So16NSObjectProtocolP", "SKTransition"]
 - !private ["So16NSObjectProtocolP", "StartGameScene"]
 - !private ["So16NSObjectProtocolP", "TimeInterval"]
@@ -1221,6 +1249,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "accelerometerUpdateInterval"]
 - !private ["So16NSObjectProtocolP", "addChild"]
 - !private ["So16NSObjectProtocolP", "arc4random_uniform"]
+- !private ["So16NSObjectProtocolP", "background"]
 - !private ["So16NSObjectProtocolP", "backgroundColor"]
 - !private ["So16NSObjectProtocolP", "black"]
 - !private ["So16NSObjectProtocolP", "bodyA"]
@@ -1247,7 +1276,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "fontSize"]
 - !private ["So16NSObjectProtocolP", "frame"]
 - !private ["So16NSObjectProtocolP", "gravity"]
-- !private ["So16NSObjectProtocolP", "green"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "invaderColumn"]
 - !private ["So16NSObjectProtocolP", "invaderNum"]
@@ -1257,6 +1285,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "kill"]
 - !private ["So16NSObjectProtocolP", "leftBounds"]
 - !private ["So16NSObjectProtocolP", "levelComplete"]
+- !private ["So16NSObjectProtocolP", "lightGray"]
 - !private ["So16NSObjectProtocolP", "location"]
 - !private ["So16NSObjectProtocolP", "main"]
 - !private ["So16NSObjectProtocolP", "maxLevels"]
@@ -1280,6 +1309,8 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "rowsOfInvaders"]
 - !private ["So16NSObjectProtocolP", "run"]
 - !private ["So16NSObjectProtocolP", "scaleMode"]
+- !private ["So16NSObjectProtocolP", "score"]
+- !private ["So16NSObjectProtocolP", "scoreText"]
 - !private ["So16NSObjectProtocolP", "sequence"]
 - !private ["So16NSObjectProtocolP", "setupAccelerometer"]
 - !private ["So16NSObjectProtocolP", "setupCloud"]
@@ -1296,7 +1327,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "zPosition"]
 - !private ["So14NSSecureCodingP", "acceleration"]
 - !private ["So14NSSecureCodingP", "black"]
-- !private ["So14NSSecureCodingP", "green"]
+- !private ["So14NSSecureCodingP", "lightGray"]
 - ["s7NumericP", "init"]
 - !private ["s7NumericP", "squareRoot"]
 - !private ["So14OperationQueueC", "current"]
@@ -1344,11 +1375,10 @@ depends-member:
 - ["So12SKEffectNodeC", "Player"]
 - !private ["So12SKEffectNodeC", "SKAction"]
 - !private ["So12SKEffectNodeC", "SKColor"]
-- !private ["So12SKEffectNodeC", "SKEmitterNode"]
-- !private ["So12SKEffectNodeC", "SKLabelNode"]
+- ["So12SKEffectNodeC", "SKLabelNode"]
 - !private ["So12SKEffectNodeC", "SKPhysicsBody"]
 - ["So12SKEffectNodeC", "SKPhysicsContact"]
-- !private ["So12SKEffectNodeC", "SKSpriteNode"]
+- ["So12SKEffectNodeC", "SKSpriteNode"]
 - !private ["So12SKEffectNodeC", "SKTransition"]
 - ["So12SKEffectNodeC", "SKView"]
 - ["So12SKEffectNodeC", "Set"]
@@ -1361,6 +1391,7 @@ depends-member:
 - ["So12SKEffectNodeC", "accelerationX"]
 - !private ["So12SKEffectNodeC", "addChild"]
 - !private ["So12SKEffectNodeC", "arc4random_uniform"]
+- ["So12SKEffectNodeC", "background"]
 - !private ["So12SKEffectNodeC", "backgroundColor"]
 - ["So12SKEffectNodeC", "checkClouds"]
 - ["So12SKEffectNodeC", "clouds"]
@@ -1398,6 +1429,8 @@ depends-member:
 - ["So12SKEffectNodeC", "rowsOfInvaders"]
 - !private ["So12SKEffectNodeC", "run"]
 - !private ["So12SKEffectNodeC", "scaleMode"]
+- ["So12SKEffectNodeC", "score"]
+- ["So12SKEffectNodeC", "scoreText"]
 - ["So12SKEffectNodeC", "setupAccelerometer"]
 - ["So12SKEffectNodeC", "setupCloud"]
 - ["So12SKEffectNodeC", "setupInvaders"]
@@ -1409,12 +1442,9 @@ depends-member:
 - ["So12SKEffectNodeC", "touchesMoved"]
 - ["So12SKEffectNodeC", "update"]
 - !private ["So12SKEffectNodeC", "view"]
-- !private ["So13SKEmitterNodeC", "init"]
-- !private ["So13SKEmitterNodeC", "position"]
-- !private ["So13SKEmitterNodeC", "zPosition"]
 - !private ["So11SKLabelNodeC", "fontColor"]
 - !private ["So11SKLabelNodeC", "fontSize"]
-- !private ["So11SKLabelNodeC", "init"]
+- ["So11SKLabelNodeC", "init"]
 - !private ["So11SKLabelNodeC", "position"]
 - !private ["So11SKLabelNodeC", "text"]
 - !private ["So11SKLabelNodeC", "zPosition"]
@@ -1432,11 +1462,10 @@ depends-member:
 - ["So6SKNodeC", "Player"]
 - !private ["So6SKNodeC", "SKAction"]
 - !private ["So6SKNodeC", "SKColor"]
-- !private ["So6SKNodeC", "SKEmitterNode"]
-- !private ["So6SKNodeC", "SKLabelNode"]
+- ["So6SKNodeC", "SKLabelNode"]
 - !private ["So6SKNodeC", "SKPhysicsBody"]
 - ["So6SKNodeC", "SKPhysicsContact"]
-- !private ["So6SKNodeC", "SKSpriteNode"]
+- ["So6SKNodeC", "SKSpriteNode"]
 - !private ["So6SKNodeC", "SKTransition"]
 - ["So6SKNodeC", "SKView"]
 - ["So6SKNodeC", "Set"]
@@ -1449,6 +1478,7 @@ depends-member:
 - ["So6SKNodeC", "accelerationX"]
 - !private ["So6SKNodeC", "addChild"]
 - !private ["So6SKNodeC", "arc4random_uniform"]
+- ["So6SKNodeC", "background"]
 - !private ["So6SKNodeC", "backgroundColor"]
 - ["So6SKNodeC", "checkClouds"]
 - ["So6SKNodeC", "clouds"]
@@ -1496,6 +1526,8 @@ depends-member:
 - ["So6SKNodeC", "rowsOfInvaders"]
 - !private ["So6SKNodeC", "run"]
 - !private ["So6SKNodeC", "scaleMode"]
+- ["So6SKNodeC", "score"]
+- ["So6SKNodeC", "scoreText"]
 - ["So6SKNodeC", "setupAccelerometer"]
 - ["So6SKNodeC", "setupCloud"]
 - ["So6SKNodeC", "setupInvaders"]
@@ -1529,9 +1561,9 @@ depends-member:
 - ["So24SKPhysicsContactDelegateP", "Player"]
 - !private ["So24SKPhysicsContactDelegateP", "SKAction"]
 - !private ["So24SKPhysicsContactDelegateP", "SKColor"]
-- !private ["So24SKPhysicsContactDelegateP", "SKEmitterNode"]
-- !private ["So24SKPhysicsContactDelegateP", "SKLabelNode"]
+- ["So24SKPhysicsContactDelegateP", "SKLabelNode"]
 - !private ["So24SKPhysicsContactDelegateP", "SKPhysicsBody"]
+- ["So24SKPhysicsContactDelegateP", "SKSpriteNode"]
 - !private ["So24SKPhysicsContactDelegateP", "SKTransition"]
 - !private ["So24SKPhysicsContactDelegateP", "StartGameScene"]
 - !private ["So24SKPhysicsContactDelegateP", "TimeInterval"]
@@ -1541,6 +1573,7 @@ depends-member:
 - !private ["So24SKPhysicsContactDelegateP", "accelerationX"]
 - !private ["So24SKPhysicsContactDelegateP", "addChild"]
 - !private ["So24SKPhysicsContactDelegateP", "arc4random_uniform"]
+- !private ["So24SKPhysicsContactDelegateP", "background"]
 - !private ["So24SKPhysicsContactDelegateP", "backgroundColor"]
 - !private ["So24SKPhysicsContactDelegateP", "checkClouds"]
 - !private ["So24SKPhysicsContactDelegateP", "clouds"]
@@ -1573,6 +1606,8 @@ depends-member:
 - !private ["So24SKPhysicsContactDelegateP", "rowsOfInvaders"]
 - !private ["So24SKPhysicsContactDelegateP", "run"]
 - !private ["So24SKPhysicsContactDelegateP", "scaleMode"]
+- !private ["So24SKPhysicsContactDelegateP", "score"]
+- !private ["So24SKPhysicsContactDelegateP", "scoreText"]
 - !private ["So24SKPhysicsContactDelegateP", "setupAccelerometer"]
 - !private ["So24SKPhysicsContactDelegateP", "setupCloud"]
 - !private ["So24SKPhysicsContactDelegateP", "setupInvaders"]
@@ -1597,11 +1632,10 @@ depends-member:
 - ["So7SKSceneC", "Player"]
 - !private ["So7SKSceneC", "SKAction"]
 - !private ["So7SKSceneC", "SKColor"]
-- !private ["So7SKSceneC", "SKEmitterNode"]
-- !private ["So7SKSceneC", "SKLabelNode"]
+- ["So7SKSceneC", "SKLabelNode"]
 - !private ["So7SKSceneC", "SKPhysicsBody"]
 - ["So7SKSceneC", "SKPhysicsContact"]
-- !private ["So7SKSceneC", "SKSpriteNode"]
+- ["So7SKSceneC", "SKSpriteNode"]
 - !private ["So7SKSceneC", "SKTransition"]
 - ["So7SKSceneC", "SKView"]
 - ["So7SKSceneC", "Set"]
@@ -1615,6 +1649,7 @@ depends-member:
 - ["So7SKSceneC", "accelerationX"]
 - !private ["So7SKSceneC", "addChild"]
 - !private ["So7SKSceneC", "arc4random_uniform"]
+- ["So7SKSceneC", "background"]
 - !private ["So7SKSceneC", "backgroundColor"]
 - ["So7SKSceneC", "checkClouds"]
 - ["So7SKSceneC", "clouds"]
@@ -1652,6 +1687,8 @@ depends-member:
 - ["So7SKSceneC", "rowsOfInvaders"]
 - !private ["So7SKSceneC", "run"]
 - !private ["So7SKSceneC", "scaleMode"]
+- ["So7SKSceneC", "score"]
+- ["So7SKSceneC", "scoreText"]
 - ["So7SKSceneC", "setupAccelerometer"]
 - ["So7SKSceneC", "setupCloud"]
 - ["So7SKSceneC", "setupInvaders"]
@@ -1665,6 +1702,7 @@ depends-member:
 - !private ["So7SKSceneC", "view"]
 - !private ["So12SKSpriteNodeC", "die"]
 - !private ["So12SKSpriteNodeC", "fireBullet"]
+- ["So12SKSpriteNodeC", "init"]
 - !private ["So12SKSpriteNodeC", "invaderColumn"]
 - !private ["So12SKSpriteNodeC", "invaderRow"]
 - !private ["So12SKSpriteNodeC", "kill"]
@@ -1673,6 +1711,7 @@ depends-member:
 - !private ["So12SKSpriteNodeC", "removeFromParent"]
 - !private ["So12SKSpriteNodeC", "run"]
 - !private ["So12SKSpriteNodeC", "size"]
+- !private ["So12SKSpriteNodeC", "zPosition"]
 - !private ["So12SKTransitionC", "flipHorizontal"]
 - !private ["So6SKViewC", "presentScene"]
 - ["So10SKWarpableP", "Bool"]
@@ -1689,9 +1728,9 @@ depends-member:
 - ["So10SKWarpableP", "Player"]
 - !private ["So10SKWarpableP", "SKAction"]
 - !private ["So10SKWarpableP", "SKColor"]
-- !private ["So10SKWarpableP", "SKEmitterNode"]
-- !private ["So10SKWarpableP", "SKLabelNode"]
+- ["So10SKWarpableP", "SKLabelNode"]
 - !private ["So10SKWarpableP", "SKPhysicsBody"]
+- ["So10SKWarpableP", "SKSpriteNode"]
 - !private ["So10SKWarpableP", "SKTransition"]
 - !private ["So10SKWarpableP", "StartGameScene"]
 - !private ["So10SKWarpableP", "TimeInterval"]
@@ -1701,6 +1740,7 @@ depends-member:
 - !private ["So10SKWarpableP", "accelerationX"]
 - !private ["So10SKWarpableP", "addChild"]
 - !private ["So10SKWarpableP", "arc4random_uniform"]
+- !private ["So10SKWarpableP", "background"]
 - !private ["So10SKWarpableP", "backgroundColor"]
 - !private ["So10SKWarpableP", "checkClouds"]
 - !private ["So10SKWarpableP", "clouds"]
@@ -1741,6 +1781,8 @@ depends-member:
 - !private ["So10SKWarpableP", "rowsOfInvaders"]
 - !private ["So10SKWarpableP", "run"]
 - !private ["So10SKWarpableP", "scaleMode"]
+- !private ["So10SKWarpableP", "score"]
+- !private ["So10SKWarpableP", "scoreText"]
 - !private ["So10SKWarpableP", "setupAccelerometer"]
 - !private ["So10SKWarpableP", "setupCloud"]
 - !private ["So10SKWarpableP", "setupInvaders"]
@@ -1749,6 +1791,7 @@ depends-member:
 - !private ["So10SKWarpableP", "speedPPS"]
 - !private ["So10SKWarpableP", "squareNum"]
 - !private ["So10SKWarpableP", "view"]
+- !private ["So10SKWarpableP", "zPosition"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "enumerated"]
 - !private ["s8SequenceP", "first"]
@@ -1767,15 +1810,15 @@ depends-member:
 - ["s10StrideableP", "init"]
 - !private ["s10StrideableP", "pointee"]
 - !private ["s10StrideableP", "squareRoot"]
-- !private ["SS", "init"]
-- !private ["s14StringProtocolP", "init"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "presentScene"]
 - !private ["So12UIAppearanceP", "presentScene"]
 - !private ["So21UIAppearanceContainerP", "presentScene"]
 - !private ["So7UIColorC", "black"]
-- !private ["So7UIColorC", "green"]
+- !private ["So7UIColorC", "lightGray"]
 - !private ["So17UICoordinateSpaceP", "presentScene"]
 - !private ["So13UIDynamicItemP", "presentScene"]
 - ["So18UIFocusEnvironmentP", "Bool"]
@@ -1792,9 +1835,9 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "Player"]
 - !private ["So18UIFocusEnvironmentP", "SKAction"]
 - !private ["So18UIFocusEnvironmentP", "SKColor"]
-- !private ["So18UIFocusEnvironmentP", "SKEmitterNode"]
-- !private ["So18UIFocusEnvironmentP", "SKLabelNode"]
+- ["So18UIFocusEnvironmentP", "SKLabelNode"]
 - !private ["So18UIFocusEnvironmentP", "SKPhysicsBody"]
+- ["So18UIFocusEnvironmentP", "SKSpriteNode"]
 - !private ["So18UIFocusEnvironmentP", "SKTransition"]
 - !private ["So18UIFocusEnvironmentP", "StartGameScene"]
 - !private ["So18UIFocusEnvironmentP", "TimeInterval"]
@@ -1804,6 +1847,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "accelerationX"]
 - !private ["So18UIFocusEnvironmentP", "addChild"]
 - !private ["So18UIFocusEnvironmentP", "arc4random_uniform"]
+- !private ["So18UIFocusEnvironmentP", "background"]
 - !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "checkClouds"]
 - !private ["So18UIFocusEnvironmentP", "clouds"]
@@ -1848,6 +1892,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "rowsOfInvaders"]
 - !private ["So18UIFocusEnvironmentP", "run"]
 - !private ["So18UIFocusEnvironmentP", "scaleMode"]
+- !private ["So18UIFocusEnvironmentP", "score"]
+- !private ["So18UIFocusEnvironmentP", "scoreText"]
 - !private ["So18UIFocusEnvironmentP", "setupAccelerometer"]
 - !private ["So18UIFocusEnvironmentP", "setupCloud"]
 - !private ["So18UIFocusEnvironmentP", "setupInvaders"]
@@ -1872,9 +1918,9 @@ depends-member:
 - ["So11UIFocusItemP", "Player"]
 - !private ["So11UIFocusItemP", "SKAction"]
 - !private ["So11UIFocusItemP", "SKColor"]
-- !private ["So11UIFocusItemP", "SKEmitterNode"]
-- !private ["So11UIFocusItemP", "SKLabelNode"]
+- ["So11UIFocusItemP", "SKLabelNode"]
 - !private ["So11UIFocusItemP", "SKPhysicsBody"]
+- ["So11UIFocusItemP", "SKSpriteNode"]
 - !private ["So11UIFocusItemP", "SKTransition"]
 - !private ["So11UIFocusItemP", "StartGameScene"]
 - !private ["So11UIFocusItemP", "TimeInterval"]
@@ -1884,6 +1930,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "accelerationX"]
 - !private ["So11UIFocusItemP", "addChild"]
 - !private ["So11UIFocusItemP", "arc4random_uniform"]
+- !private ["So11UIFocusItemP", "background"]
 - !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "checkClouds"]
 - !private ["So11UIFocusItemP", "clouds"]
@@ -1928,6 +1975,8 @@ depends-member:
 - !private ["So11UIFocusItemP", "rowsOfInvaders"]
 - !private ["So11UIFocusItemP", "run"]
 - !private ["So11UIFocusItemP", "scaleMode"]
+- !private ["So11UIFocusItemP", "score"]
+- !private ["So11UIFocusItemP", "scoreText"]
 - !private ["So11UIFocusItemP", "setupAccelerometer"]
 - !private ["So11UIFocusItemP", "setupCloud"]
 - !private ["So11UIFocusItemP", "setupInvaders"]
@@ -1952,9 +2001,9 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "Player"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "SKEmitterNode"]
-- !private ["So30UIPasteConfigurationSupportingP", "SKLabelNode"]
+- ["So30UIPasteConfigurationSupportingP", "SKLabelNode"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKPhysicsBody"]
+- ["So30UIPasteConfigurationSupportingP", "SKSpriteNode"]
 - !private ["So30UIPasteConfigurationSupportingP", "SKTransition"]
 - !private ["So30UIPasteConfigurationSupportingP", "StartGameScene"]
 - !private ["So30UIPasteConfigurationSupportingP", "TimeInterval"]
@@ -1964,6 +2013,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "accelerationX"]
 - !private ["So30UIPasteConfigurationSupportingP", "addChild"]
 - !private ["So30UIPasteConfigurationSupportingP", "arc4random_uniform"]
+- !private ["So30UIPasteConfigurationSupportingP", "background"]
 - !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "checkClouds"]
 - !private ["So30UIPasteConfigurationSupportingP", "clouds"]
@@ -2008,6 +2058,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "rowsOfInvaders"]
 - !private ["So30UIPasteConfigurationSupportingP", "run"]
 - !private ["So30UIPasteConfigurationSupportingP", "scaleMode"]
+- !private ["So30UIPasteConfigurationSupportingP", "score"]
+- !private ["So30UIPasteConfigurationSupportingP", "scoreText"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupAccelerometer"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupCloud"]
 - !private ["So30UIPasteConfigurationSupportingP", "setupInvaders"]
@@ -2032,11 +2084,10 @@ depends-member:
 - ["So11UIResponderC", "Player"]
 - !private ["So11UIResponderC", "SKAction"]
 - !private ["So11UIResponderC", "SKColor"]
-- !private ["So11UIResponderC", "SKEmitterNode"]
-- !private ["So11UIResponderC", "SKLabelNode"]
+- ["So11UIResponderC", "SKLabelNode"]
 - !private ["So11UIResponderC", "SKPhysicsBody"]
 - ["So11UIResponderC", "SKPhysicsContact"]
-- !private ["So11UIResponderC", "SKSpriteNode"]
+- ["So11UIResponderC", "SKSpriteNode"]
 - !private ["So11UIResponderC", "SKTransition"]
 - ["So11UIResponderC", "SKView"]
 - ["So11UIResponderC", "Set"]
@@ -2049,6 +2100,7 @@ depends-member:
 - ["So11UIResponderC", "accelerationX"]
 - !private ["So11UIResponderC", "addChild"]
 - !private ["So11UIResponderC", "arc4random_uniform"]
+- ["So11UIResponderC", "background"]
 - !private ["So11UIResponderC", "backgroundColor"]
 - ["So11UIResponderC", "checkClouds"]
 - ["So11UIResponderC", "clouds"]
@@ -2097,6 +2149,8 @@ depends-member:
 - ["So11UIResponderC", "rowsOfInvaders"]
 - !private ["So11UIResponderC", "run"]
 - !private ["So11UIResponderC", "scaleMode"]
+- ["So11UIResponderC", "score"]
+- ["So11UIResponderC", "scoreText"]
 - ["So11UIResponderC", "setupAccelerometer"]
 - ["So11UIResponderC", "setupCloud"]
 - ["So11UIResponderC", "setupInvaders"]
@@ -2124,9 +2178,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "Player"]
 - !private ["So30UIResponderStandardEditActionsP", "SKAction"]
 - !private ["So30UIResponderStandardEditActionsP", "SKColor"]
-- !private ["So30UIResponderStandardEditActionsP", "SKEmitterNode"]
-- !private ["So30UIResponderStandardEditActionsP", "SKLabelNode"]
+- ["So30UIResponderStandardEditActionsP", "SKLabelNode"]
 - !private ["So30UIResponderStandardEditActionsP", "SKPhysicsBody"]
+- ["So30UIResponderStandardEditActionsP", "SKSpriteNode"]
 - !private ["So30UIResponderStandardEditActionsP", "SKTransition"]
 - !private ["So30UIResponderStandardEditActionsP", "StartGameScene"]
 - !private ["So30UIResponderStandardEditActionsP", "TimeInterval"]
@@ -2136,6 +2190,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "accelerationX"]
 - !private ["So30UIResponderStandardEditActionsP", "addChild"]
 - !private ["So30UIResponderStandardEditActionsP", "arc4random_uniform"]
+- !private ["So30UIResponderStandardEditActionsP", "background"]
 - !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "checkClouds"]
 - !private ["So30UIResponderStandardEditActionsP", "clouds"]
@@ -2180,6 +2235,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "rowsOfInvaders"]
 - !private ["So30UIResponderStandardEditActionsP", "run"]
 - !private ["So30UIResponderStandardEditActionsP", "scaleMode"]
+- !private ["So30UIResponderStandardEditActionsP", "score"]
+- !private ["So30UIResponderStandardEditActionsP", "scoreText"]
 - !private ["So30UIResponderStandardEditActionsP", "setupAccelerometer"]
 - !private ["So30UIResponderStandardEditActionsP", "setupCloud"]
 - !private ["So30UIResponderStandardEditActionsP", "setupInvaders"]
@@ -2223,15 +2280,15 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "remove"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "black"]
-- !private ["s26_ExpressibleByColorLiteralP", "green"]
-- !private ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "lightGray"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Bool"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
@@ -2246,9 +2303,9 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "Player"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKEmitterNode"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "SKLabelNode"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "SKLabelNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKPhysicsBody"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "SKSpriteNode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "SKTransition"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "StartGameScene"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TimeInterval"]
@@ -2260,6 +2317,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accelerometerUpdateInterval"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addChild"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "arc4random_uniform"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "background"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bodyA"]
@@ -2286,7 +2344,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fontSize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "gravity"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "green"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invaderColumn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "invaderNum"]
@@ -2296,6 +2353,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "kill"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftBounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "levelComplete"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lightGray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "location"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "maxLevels"]
@@ -2319,6 +2377,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rowsOfInvaders"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "run"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "scaleMode"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "score"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "scoreText"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sequence"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupAccelerometer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setupCloud"]
@@ -2344,13 +2404,14 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "midX"]
 - !private ["s21_ObjectiveCBridgeableP", "randomElement"]
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
+- !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s21_ObjectiveCBridgeableP", "squareRoot"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - !private ["s21_ObjectiveCBridgeableP", "x"]
 - !private ["s21_ObjectiveCBridgeableP", "y"]
 - !private ["s8_PointerP", "pointee"]
-- !private ["s16_SwiftStringViewP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
 - "s23BidirectionalCollectionP"
@@ -2382,19 +2443,19 @@ depends-nominal:
 - "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - "s25ExpressibleByFloatLiteralP"
 - "s27ExpressibleByIntegerLiteralP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - "s13FloatingPointP"
 - "13UnicornArcade9GameSceneC"
 - "s8HashableP"
 - !private "13UnicornArcade7InvaderC"
 - !private "13UnicornArcade18LevelCompleteSceneC"
-- !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
 - "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
@@ -2410,15 +2471,14 @@ depends-nominal:
 - "s26RangeReplaceableCollectionP"
 - !private "So8SKActionC"
 - "So12SKEffectNodeC"
-- !private "So13SKEmitterNodeC"
-- !private "So11SKLabelNodeC"
+- "So11SKLabelNodeC"
 - "So6SKNodeC"
 - !private "So13SKPhysicsBodyC"
 - !private "So16SKPhysicsContactC"
 - "So24SKPhysicsContactDelegateP"
 - !private "So14SKPhysicsWorldC"
 - "So7SKSceneC"
-- !private "So12SKSpriteNodeC"
+- "So12SKSpriteNodeC"
 - !private "So12SKTransitionC"
 - !private "So6SKViewC"
 - "So10SKWarpableP"
@@ -2428,10 +2488,10 @@ depends-nominal:
 - "s13SignedNumericP"
 - !private "13UnicornArcade14StartGameSceneC"
 - "s10StrideableP"
-- !private "SS"
-- !private "s14StringProtocolP"
-- !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -2457,18 +2517,18 @@ depends-nominal:
 - !private "s37_DefaultCustomPlaygroundQuickLookableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s26_ExpressibleByColorLiteralP"
-- !private "s33_ExpressibleByStringInterpolationP"
+- "s33_ExpressibleByStringInterpolationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s16_SwiftStringViewP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
@@ -2501,4 +2561,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4b033fcf8f8b4dc788bad2369d69e2af"
+interface-hash: "b6f145f1af6d33187d6e6b55d087dfe6"
