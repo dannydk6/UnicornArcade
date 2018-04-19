@@ -28,11 +28,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var invaderSpeed = 2
     let leftBounds = CGFloat(30)
     var rightBounds = CGFloat(0)
-    var invadersWhoCanFire:[Invader] = [Invader]()
-    let player:Player = Player()
+    var invadersWhoCanFire = [Invader]()  //changed invadersWhoCanFire:[Invader]
+    let player = Player() //changed player:Player
     let maxLevels = 3
     let motionManager: CMMotionManager = CMMotionManager()
     var accelerationX: CGFloat = 0.0
+    
+    //to hold if we already added one cloud for a cloud we are going to replace
+    var didAlreadyAddCloud = [Bool]();
+    
+    var clouds = [Cloud]();
+    
+    let moveCloudDownBy = 5;
     
     // This code is run when the view is switched in to.
     override func didMove(to view: SKView) {
@@ -58,6 +65,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         setupPlayer()
         invokeInvaderFire()
         setupAccelerometer()
+        
+        //add initial cloud to scene
+        setupCloud();
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -68,7 +78,96 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func update(_ currentTime: TimeInterval) {
         /* Called before each frame is rendered */
         moveInvaders()
+        moveClouds()
+        checkClouds()
     }
+    
+    // Add a cloud to the scene, and set intial position.
+    func setupCloud() {
+        
+        let tempCloud:Cloud = Cloud();
+        
+        let screenSize = UIScreen.main.bounds;
+        let screenWidth = screenSize.width;
+        let screenHeight = screenSize.height;
+
+        //generate a random location on the screen to place cloud
+        //
+        let cloudLocationX = arc4random_uniform(UInt32(screenWidth));
+        let cloudLocationY = UInt32(screenHeight) + 30;
+        
+        //position cloud
+        tempCloud.position = CGPoint(x: CGFloat(cloudLocationX), y: CGFloat(cloudLocationY));
+        
+        //add cloud to scene;
+        addChild(tempCloud);
+        
+        //add cloud to array of clouds (currently on the view)
+        clouds.append(tempCloud);
+        
+        //index will corelate with cloud its describing in clouds array
+        didAlreadyAddCloud.append(false);
+        
+
+    }
+    
+    //moves all clouds in the scene
+    func moveClouds() {
+        
+        //subtract from y cordinate to move cloud down screen
+        for cloud in clouds {
+            let currentPosition = cloud.position;
+            let currentY = currentPosition.y;
+            
+            let newY = currentY - CGFloat(moveCloudDownBy);
+            
+            cloud.position = CGPoint(x: currentPosition.x, y: newY);
+        }
+    }
+
+    //checks clouds, to see if we need to add another cloud to screen and if we need to delete any clouds currently on view
+    func checkClouds() {
+        
+        let deleteCondition = -20;
+        let addCondition = 150;
+        
+        print(clouds.count);
+        
+        for cloud in clouds {
+            let currentPosition = cloud.position;
+            
+            //if cloud is out of view remove it
+            if (currentPosition.y <= CGFloat(deleteCondition)) {
+                deleteCloud(cloudToRemove: cloud);
+            }
+            //if cloud close to being out of view, add another cloud
+            else if (currentPosition.y <= CGFloat(addCondition)) {
+
+                if let index = clouds.index(of: cloud) {
+                    if (didAlreadyAddCloud[index] == false) {
+                        didAlreadyAddCloud[index] = true;
+                        setupCloud();
+                    }
+                    
+                }
+            }
+        }
+        
+    }
+    
+    //removes cloud node from clouds array from and the boolean corresponding value in didAlreadyAddCloud
+    func deleteCloud(cloudToRemove: Cloud) {
+        
+        cloudToRemove.removeFromParent();
+        
+        if let index = clouds.index(of: cloudToRemove) {
+            clouds.remove(at: index)
+            didAlreadyAddCloud.remove(at: index);
+        }
+
+    }
+
+    
     
     // Positions the rows and columns of invaders on the screen.
     func setupInvaders(){
@@ -195,6 +294,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             (secondBody.categoryBitMask & CollisionCategories.Player != 0)) {
             NSLog("Invader and Player Collision Contact")
             player.kill()
+        }
+        
+        if ((firstBody.categoryBitMask & CollisionCategories.Player != 0) &&
+            (secondBody.categoryBitMask & CollisionCategories.Obstacle != 0)) {
+            player.die()
         }
         
     }

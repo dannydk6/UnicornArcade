@@ -11,24 +11,27 @@ import UIKit
 import SpriteKit
 
 class Cloud: SKSpriteNode {
-    var invaderRow = 0
-    var invaderColumn = 0
     
     init(){
-        let texture = SKTexture(imageNamed: "invader1")
+        let texture = SKTexture(imageNamed: "bigCloud1")
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
-        self.name = "invader"
+        self.name = "bigCloud1"
         self.physicsBody =
             SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
         self.physicsBody?.usesPreciseCollisionDetection = true
         self.physicsBody?.categoryBitMask = CollisionCategories.Obstacle
         self.physicsBody?.contactTestBitMask = CollisionCategories.Player
-        self.physicsBody?.collisionBitMask = 0x0
+        self.physicsBody?.collisionBitMask = CollisionCategories.Obstacle
+        
+        self.setScale(0.2);
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    
 }
+
+

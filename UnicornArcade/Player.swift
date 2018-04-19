@@ -86,7 +86,7 @@ class Player: SKSpriteNode {
         let fadeOutAction = SKAction.fadeOut(withDuration: 0.4)
         let fadeInAction = SKAction.fadeIn(withDuration: 0.4)
         let fadeOutIn = SKAction.sequence([fadeOutAction,fadeInAction])
-        let fadeOutInAction = SKAction.repeat(fadeOutIn, count: 5)
+        let fadeOutInAction = SKAction.repeat(fadeOutIn, count: 3)
         let setInvicibleFalse = SKAction.run(){
             self.invincible = false
         }
