@@ -209,6 +209,14 @@ SWIFT_CLASS("_TtC13UnicornArcade6Bullet")
 - (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
 @end
 
+
+SWIFT_CLASS("_TtC13UnicornArcade5Cloud")
+@interface Cloud : SKSpriteNode
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
+@end
+
 @class SKView;
 @class UITouch;
 @class UIEvent;

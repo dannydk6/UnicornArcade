@@ -1,10 +1,10 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "c71ffd89e305d2a00a64ddd6c15b04ae"
-build_time: [1524086004, 616714000]
+build_time: [1524104602, 108383000]
 inputs:
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/PlayerBullet.swift": [1524085913, 0]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Cloud.swift": !dirty [9223372036, 854775807]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameScene.swift": [1524085913, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Cloud.swift": [1524086136, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameScene.swift": [1524097129, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/StartGameScene.swift": [1524085913, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/LevelCompleteScene.swift": [1524085913, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Invader.swift": [1524085913, 0]

@@ -10,11 +10,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		EVDQKVy0GRZ9O56Y4N+gDFa55pM=
+		fGKfUh00Wf+CJbRpYNqtIaU7tyc=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		l6vsoDG3NY0ppIZl3TJm6ZBAuPs=
+		jopO/RPUwBYFDQq+vLry39Ro+uo=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		W75/g6aAj7SXyaBlc1iZ25SJeBQ=
+		kgEttUldysSYe1J/yiUpX64KG70=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
 		<data>
-		dOJMTCVBoraMYgG7tqV6XnQlpK8=
+		1I8ctODUvmrGkIXOxTJGsXx/x5I=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BV1-FR-VrT.nib</key>
 		<data>
-		5fW86zJ0keisQw2b3uYvLa3njIs=
+		xSDGy4LqKhEog+pRBmNx2Ye1Z2s=
 		</data>
 		<key>CONQUEST.ttf</key>
 		<data>
@@ -136,6 +136,10 @@
 		<data>
 		qWWV4oMil58IbEhmKLzpVt6r0pM=
 		</data>
+		<key>bigCloud1.png</key>
+		<data>
+		0NhDFrORMv7RjxzWGJ7/wtHQw78=
+		</data>
 		<key>invader1.png</key>
 		<data>
 		RkFhfFzWduUOLhGZSl4/6FImpeM=
@@ -218,22 +222,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EVDQKVy0GRZ9O56Y4N+gDFa55pM=
+			fGKfUh00Wf+CJbRpYNqtIaU7tyc=
 			</data>
 			<key>hash2</key>
 			<data>
-			hG3uNvSymZyIrcJKgJjNRjHCUq4YArEfLTXU3SiAIqw=
+			HX0+U9rBMn2GEYMmwYiKpRFuVWCvdv9ZAwGVwbn6XIc=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			l6vsoDG3NY0ppIZl3TJm6ZBAuPs=
+			jopO/RPUwBYFDQq+vLry39Ro+uo=
 			</data>
 			<key>hash2</key>
 			<data>
-			T6n6oE6OF4byDoZWsEZSQnoKmMZ0YdTsQV1397sJ11w=
+			usylQPzDIuIJyUscINSV8qAwMTNuWds7W044i8Aa+rE=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -251,22 +255,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W75/g6aAj7SXyaBlc1iZ25SJeBQ=
+			kgEttUldysSYe1J/yiUpX64KG70=
 			</data>
 			<key>hash2</key>
 			<data>
-			ngcXu+4dv8Uz2sa6ferH6hAd7E6uqCfKiJyKaWnZJ4w=
+			gMJtEHbhvCZwRTBlMgVUaQbgFKJCUPvIIiVRNgQm9aY=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BV1-FR-VrT-view-3se-qz-xqx.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			dOJMTCVBoraMYgG7tqV6XnQlpK8=
+			1I8ctODUvmrGkIXOxTJGsXx/x5I=
 			</data>
 			<key>hash2</key>
 			<data>
-			7r6s6jnXjjq1l1W+17qqvzbs9k49JqzdJc7tORBuUPw=
+			Wp9BEasY0DNZYv+ar4RhjgnLPf0v1sTippe/yCnzBS4=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -284,11 +288,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5fW86zJ0keisQw2b3uYvLa3njIs=
+			xSDGy4LqKhEog+pRBmNx2Ye1Z2s=
 			</data>
 			<key>hash2</key>
 			<data>
-			zC5mrt/RcRzhZuFmhBmc72vb4ZCP3czR5m3qL94v6+Y=
+			ApVXUZD+GEdYP2A0mdSHa3AobpCXhPfca9FRBryZN7s=
 			</data>
 		</dict>
 		<key>CONQUEST.ttf</key>
@@ -542,6 +546,17 @@
 			<key>hash2</key>
 			<data>
 			tqpsD20gbEMu7+eTpQtsL6igM6n4qomiu8Qk3iIVO0g=
+			</data>
+		</dict>
+		<key>bigCloud1.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0NhDFrORMv7RjxzWGJ7/wtHQw78=
+			</data>
+			<key>hash2</key>
+			<data>
+			jBNIR8/kok3hD6fkWluWryl7KIgZrtrYdC2Rs8Lg4/I=
 			</data>
 		</dict>
 		<key>invader1.png</key>

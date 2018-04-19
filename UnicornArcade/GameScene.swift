@@ -63,7 +63,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         rightBounds = self.size.width - 30
         setupInvaders()
         setupPlayer()
-        invokeInvaderFire()
+        //invokeInvaderFire()
         setupAccelerometer()
         
         //add initial cloud to scene
@@ -73,11 +73,22 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /* Called when a touch begins */
         self.player.fireBullet(scene: self)
+        
+        
+        // Unwrap to UITouch object
+        let touch = touches.first!
+        let touchLocation = touch.location(in: self)
+        print("Touch Location \(touchLocation.x), \(touchLocation.y)")
+        let move = SKAction.move(to: CGPoint(x: touchLocation.x,y: self.player.position.y), duration:1.0)
+        self.player.run(move)
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
         /* Called before each frame is rendered */
-        moveInvaders()
+        
+        //Edited out move invaders for testing purposes
+        //moveInvaders()
         moveClouds()
         checkClouds()
     }
@@ -131,7 +142,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let deleteCondition = -20;
         let addCondition = 150;
         
-        print(clouds.count);
+        //print(clouds.count);
         
         for cloud in clouds {
             let currentPosition = cloud.position;

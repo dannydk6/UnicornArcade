@@ -196,6 +196,7 @@ depends-member:
 - ["13UnicornArcade19CollisionCategoriesV", "EdgeBody"]
 - ["13UnicornArcade19CollisionCategoriesV", "Invader"]
 - ["13UnicornArcade19CollisionCategoriesV", "InvaderBullet"]
+- ["13UnicornArcade19CollisionCategoriesV", "Obstacle"]
 - ["13UnicornArcade19CollisionCategoriesV", "Player"]
 - ["13UnicornArcade19CollisionCategoriesV", "PlayerBullet"]
 - ["13UnicornArcade19CollisionCategoriesV", "UInt32"]
@@ -1934,4 +1935,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "6e029ccd1dffb255df2ed9fd13134f95"
+interface-hash: "b2c6d062fc2141fcad35196d57088863"
