@@ -225,6 +225,7 @@ SWIFT_CLASS("_TtC13UnicornArcade5Cloud")
 SWIFT_CLASS("_TtC13UnicornArcade9GameScene")
 @interface GameScene : SKScene <SKPhysicsContactDelegate>
 - (void)didMoveToView:(SKView * _Nonnull)view;
+- (void)touchesMoved:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
 - (void)update:(NSTimeInterval)currentTime;
 - (void)didBeginContact:(SKPhysicsContact * _Nonnull)contact;

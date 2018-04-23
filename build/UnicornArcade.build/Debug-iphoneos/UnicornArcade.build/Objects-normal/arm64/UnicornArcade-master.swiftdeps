@@ -1,16 +1,17 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
-options: "c71ffd89e305d2a00a64ddd6c15b04ae"
-build_time: [1524104602, 108383000]
+options: "ef8bc1af1ac9bd6b55c23b2f4711faf7"
+build_time: [1524516333, 799535000]
 inputs:
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/PlayerBullet.swift": [1524085913, 0]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Cloud.swift": [1524086136, 0]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameScene.swift": [1524097129, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Cloud.swift": [1524104840, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameScene.swift": [1524516332, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/StartGameScene.swift": [1524085913, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/LevelCompleteScene.swift": [1524085913, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Infinite Scrolling Background.swift": [1523336842, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Invader.swift": [1524085913, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Bullet.swift": [1524085913, 0]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Utilities.swift": [1524085913, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Utilities.swift": [1524110225, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/GameViewController.swift": [1524085913, 0]
-  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Player.swift": [1524085913, 0]
+  "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/Player.swift": [1524151733, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/AppDelegate.swift": [1524085913, 0]
   "/Users/dannydk6/IOS Apps/iosProgrammingNyu/UnicornArcade/UnicornArcade/InvaderBullet.swift": [1524085913, 0]
