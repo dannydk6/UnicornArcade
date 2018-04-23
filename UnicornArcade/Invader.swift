@@ -13,8 +13,8 @@ class Invader: SKSpriteNode {
     var invaderRow = 0
     var invaderColumn = 0
     
-    init(){
-        let texture = SKTexture(imageNamed: "invader1")
+    init(image: String){
+        let texture = SKTexture(imageNamed: image)
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.name = "invader"
         self.physicsBody =

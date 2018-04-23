@@ -49,6 +49,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     let moveCloudDownBy = 5;
     
+    var invaderList = ["invader1", "invader2", "invader3"];
+    
     // This code is run when the view is switched in to.
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
@@ -137,13 +139,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let tempCloud:Cloud = Cloud();
         
+        let cloudHalfLength = Float(tempCloud.size.width/2);
+        
         let screenSize = UIScreen.main.bounds;
         let screenWidth = screenSize.width;
         let screenHeight = screenSize.height;
 
         //generate a random location on the screen to place cloud
         //
-        let cloudLocationX = arc4random_uniform(UInt32(screenWidth));
+        var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
+        cloudLocationX = fixBoundsOfSpawnedNodes(xposition: cloudLocationX, objectHalfWidth: cloudHalfLength);
         let cloudLocationY = UInt32(screenHeight) + 30;
         
         //position cloud
@@ -222,30 +227,62 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 
     }
 
-    
-    
-    // Positions the rows and columns of invaders on the screen.
-    func setupInvaders(){
-        var invaderRow = 0;
-        var invaderColumn = 0;
-        let numberOfInvaders = invaderNum * 2 + 1
-        for i in 1...rowsOfInvaders {
-            invaderRow = i
-            for j in 1...numberOfInvaders {
-                invaderColumn = j
-                let tempInvader:Invader = Invader()
-                let invaderHalfWidth:CGFloat = tempInvader.size.width/2
-                let xPositionStart:CGFloat = size.width/2 - invaderHalfWidth - (CGFloat(invaderNum) * tempInvader.size.width) + CGFloat(10)
-                tempInvader.position = CGPoint(x:xPositionStart + ((tempInvader.size.width+CGFloat(10))*(CGFloat(j-1))), y:CGFloat(self.size.height - CGFloat(i) * 46))
-                tempInvader.invaderRow = invaderRow
-                tempInvader.invaderColumn = invaderColumn
-                addChild(tempInvader)
-                if(i == rowsOfInvaders){
-                    invadersWhoCanFire.append(tempInvader)
-                }
-            }
+    //corrects node spwans of clouds and enemies so that they appear fully on the screen
+    //
+    func fixBoundsOfSpawnedNodes(xposition: Float, objectHalfWidth: Float) -> Float {
+        
+        let screenSize = UIScreen.main.bounds;
+        let screenWidth = screenSize.width;
+        
+        var newXposition = xposition;
+        
+        //so that the monster doesnt spawn out of screen view
+        if (xposition < objectHalfWidth) {
+            newXposition = xposition + objectHalfWidth - xposition;
         }
+        else if ( Float(screenWidth) - xposition < objectHalfWidth) {
+            newXposition =  Float(screenWidth) - objectHalfWidth;
+        }
+        
+        return newXposition;
     }
+    
+    
+// Positions randomly places an invader on the screen
+func setupInvaders(){
+    
+    let screenSize = UIScreen.main.bounds;
+    let screenWidth = screenSize.width;
+    let screenHeight = screenSize.height;
+    
+    //generate a random location on the screen to place cloud
+    //
+    let cloudLocationY = UInt32(screenHeight) - 40;
+    
+    let randomInvader = Int(arc4random_uniform(UInt32(invaderList.count)));
+    let tempInvader:Invader = Invader(image : invaderList[randomInvader]);
+    let invaderHalfWidth = Float(tempInvader.size.width/2);
+    var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
+    
+    cloudLocationX = fixBoundsOfSpawnedNodes(xposition: cloudLocationX, objectHalfWidth: invaderHalfWidth);
+    
+    /*
+    //so that the monster doesnt spawn out of screen view
+    if (cloudLocationX < invaderHalfWidth) {
+        cloudLocationX += invaderHalfWidth - cloudLocationX;
+    }
+    else if ( Int(screenWidth) - cloudLocationX < invaderHalfWidth) {
+        cloudLocationX = cloudLocationX - invaderHalfWidth + (Int(screenWidth) - cloudLocationX);
+    } */
+    
+    tempInvader.position = CGPoint(x: CGFloat(cloudLocationX), y: CGFloat(cloudLocationY));
+    
+    addChild(tempInvader);
+    
+    invadersWhoCanFire.append(tempInvader)
+    
+}
+    
     
     // Initiate the player character at the bottom of the screen.
     func setupPlayer(){
