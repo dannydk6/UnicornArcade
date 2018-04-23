@@ -23,7 +23,11 @@ struct CollisionCategories{
 
 // The main game scene. Acts as a delegate for physics collisions.
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    let images : [UIImage] = [UIImage(named: "blueSky")!, UIImage(named: "blueSky")!, UIImage(named: "blueSky")!]
     var background = SKSpriteNode(imageNamed: "blueSky")
+    var sinThing: CGFloat = CGFloat(0)
+    // Enemy that moves in a sine wave
+    let sinEnemy:Invader = Invader()
     
     // Right now, just the number of clouds you have passed
     var score = 0
@@ -42,6 +46,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var accelerationX: CGFloat = 0.0
     let scoreText = SKLabelNode(fontNamed: "Conquest")
     
+    var sinChangeDirection:Bool = false
+ 
     //to hold if we already added one cloud for a cloud we are going to replace
     var didAlreadyAddCloud = [Bool]();
     
@@ -54,7 +60,15 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     // This code is run when the view is switched in to.
     override func didMove(to view: SKView) {
         backgroundColor = SKColor.black
+        // Creating the instance:
+        let scrollingBackground:InfiniteScrollingBackground = InfiniteScrollingBackground(images: images, scene: self, scrollDirection: .bottom, speed: 3)!
         
+        // Calling the "scroll" method:
+        scrollingBackground.scroll()
+        
+        // (Optional) Changhing the instance's zPosition:
+        scrollingBackground.zPosition = -5000
+
         /*
         let starField = SKEmitterNode(fileNamed: "StarField")
         starField?.position = CGPoint(x:size.width/2,y:size.height/2)
@@ -92,8 +106,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         addChild(scoreText)
         
         background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-        background.zPosition = -5000
+        background.zPosition = -10000
         addChild(background)
+        
+        setupSinEnemy()
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?){
@@ -108,7 +124,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.player.run(move)
         
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         /* Called when a touch begins */
         self.player.fireBullet(scene: self)
@@ -132,6 +148,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         //moveInvaders()
         moveClouds()
         checkClouds()
+        moveSinEnemy()
     }
     
     // Add a cloud to the scene, and set intial position.
@@ -284,6 +301,13 @@ func setupInvaders(){
 }
     
     
+    
+    func setupSinEnemy(){
+        sinEnemy.position = CGPoint(x:size.width/2,y:size.height - 200)
+        addChild(sinEnemy)
+    }
+    
+    
     // Initiate the player character at the bottom of the screen.
     func setupPlayer(){
         playerY = player.size.height/2 + 10
@@ -316,6 +340,14 @@ func setupInvaders(){
         }
         
     }
+
+    func moveSinEnemy(){
+        let direction = 1
+        sinEnemy.position.x += 1
+        sinEnemy.position.y = sinEnemy.position.y + 5*cos(CGFloat(CGFloat.pi*sinThing*0.05))
+        sinThing += 1
+    }
+    
     
     // Set up an action to fire bullets from the invaders for the entire game loop.
     func invokeInvaderFire(){

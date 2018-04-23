@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6C0E926C2088E96600CF7122 /* blueSky.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E926B2088E96600CF7122 /* blueSky.png */; };
+<<<<<<< HEAD
+=======
+		6C0E926E2088EB2900CF7122 /* mediumCloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C0E926D2088EB2900CF7122 /* mediumCloud1.png */; };
+		6C1BF6E8208E6EBB005CAB6E /* Infinite Scrolling Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1BF6E7208E6EBA005CAB6E /* Infinite Scrolling Background.swift */; };
+>>>>>>> 22c14200b8769804b6a904ace7fd8a2271888c26
 		6C58C0A62087EC52007B506B /* bigCloud1.png in Resources */ = {isa = PBXBuildFile; fileRef = 6C58C0A52087EC51007B506B /* bigCloud1.png */; };
 		6C58C0A82087EC73007B506B /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C58C0A72087EC73007B506B /* Cloud.swift */; };
 		6C961F91207AB35100989EB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C961F90207AB35100989EB7 /* AppDelegate.swift */; };
@@ -47,6 +52,11 @@
 
 /* Begin PBXFileReference section */
 		6C0E926B2088E96600CF7122 /* blueSky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueSky.png; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		6C0E926D2088EB2900CF7122 /* mediumCloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mediumCloud1.png; sourceTree = "<group>"; };
+		6C1BF6E7208E6EBA005CAB6E /* Infinite Scrolling Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Infinite Scrolling Background.swift"; sourceTree = "<group>"; };
+>>>>>>> 22c14200b8769804b6a904ace7fd8a2271888c26
 		6C58C0A52087EC51007B506B /* bigCloud1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigCloud1.png; sourceTree = "<group>"; };
 		6C58C0A72087EC73007B506B /* Cloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
 		6C961F8D207AB35100989EB7 /* UnicornArcade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnicornArcade.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +128,7 @@
 			children = (
 				6C961F90207AB35100989EB7 /* AppDelegate.swift */,
 				6C58C0A72087EC73007B506B /* Cloud.swift */,
+				6C1BF6E7208E6EBA005CAB6E /* Infinite Scrolling Background.swift */,
 				6C961F94207AB35100989EB7 /* Actions.sks */,
 				6C961F96207AB35100989EB7 /* GameScene.swift */,
 				6C961FD9207B288000989EB7 /* LevelCompleteScene.swift */,
@@ -262,6 +273,7 @@
 				6C961F97207AB35100989EB7 /* GameScene.swift in Sources */,
 				6C961FA9207AB5D800989EB7 /* StartGameScene.swift in Sources */,
 				6C961FDA207B288000989EB7 /* LevelCompleteScene.swift in Sources */,
+				6C1BF6E8208E6EBB005CAB6E /* Infinite Scrolling Background.swift in Sources */,
 				6C961FC8207AD14600989EB7 /* Invader.swift in Sources */,
 				6C961FCC207AD77E00989EB7 /* Bullet.swift in Sources */,
 				6C961FD4207B141D00989EB7 /* Utilities.swift in Sources */,
@@ -413,9 +425,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLR5V4489L;
+				DEVELOPMENT_TEAM = 739D6R628V;
 				INFOPLIST_FILE = UnicornArcade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -432,9 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLR5V4489L;
+				DEVELOPMENT_TEAM = 739D6R628V;
 				INFOPLIST_FILE = UnicornArcade/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
