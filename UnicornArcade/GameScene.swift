@@ -27,7 +27,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var background = SKSpriteNode(imageNamed: "blueSky")
     var sinThing: CGFloat = CGFloat(0)
     // Enemy that moves in a sine wave
-    let sinEnemy:Invader = Invader()
+    let sinEnemy:Invader = Invader(image: "invader1")
     
     // Right now, just the number of clouds you have passed
     var score = 0
@@ -161,7 +161,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let screenSize = UIScreen.main.bounds;
         let screenWidth = screenSize.width;
         let screenHeight = screenSize.height;
-
+        
         //generate a random location on the screen to place cloud
         //
         var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
@@ -243,7 +243,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
 
     }
-
+    
     //corrects node spwans of clouds and enemies so that they appear fully on the screen
     //
     func fixBoundsOfSpawnedNodes(xposition: Float, objectHalfWidth: Float) -> Float {
@@ -265,40 +265,40 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     
-// Positions randomly places an invader on the screen
-func setupInvaders(){
-    
-    let screenSize = UIScreen.main.bounds;
-    let screenWidth = screenSize.width;
-    let screenHeight = screenSize.height;
-    
-    //generate a random location on the screen to place cloud
-    //
-    let cloudLocationY = UInt32(screenHeight) - 40;
-    
-    let randomInvader = Int(arc4random_uniform(UInt32(invaderList.count)));
-    let tempInvader:Invader = Invader(image : invaderList[randomInvader]);
-    let invaderHalfWidth = Float(tempInvader.size.width/2);
-    var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
-    
-    cloudLocationX = fixBoundsOfSpawnedNodes(xposition: cloudLocationX, objectHalfWidth: invaderHalfWidth);
-    
-    /*
-    //so that the monster doesnt spawn out of screen view
-    if (cloudLocationX < invaderHalfWidth) {
-        cloudLocationX += invaderHalfWidth - cloudLocationX;
+    // Positions the rows and columns of invaders on the screen.
+    func setupInvaders(){
+        
+        let screenSize = UIScreen.main.bounds;
+        let screenWidth = screenSize.width;
+        let screenHeight = screenSize.height;
+        
+        //generate a random location on the screen to place cloud
+        //
+        let cloudLocationY = UInt32(screenHeight) - 40;
+        
+        let randomInvader = Int(arc4random_uniform(UInt32(invaderList.count)));
+        let tempInvader:Invader = Invader(image : invaderList[randomInvader]);
+        let invaderHalfWidth = Float(tempInvader.size.width/2);
+        var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
+        
+        cloudLocationX = fixBoundsOfSpawnedNodes(xposition: cloudLocationX, objectHalfWidth: invaderHalfWidth);
+        
+        /*
+         //so that the monster doesnt spawn out of screen view
+         if (cloudLocationX < invaderHalfWidth) {
+         cloudLocationX += invaderHalfWidth - cloudLocationX;
+         }
+         else if ( Int(screenWidth) - cloudLocationX < invaderHalfWidth) {
+         cloudLocationX = cloudLocationX - invaderHalfWidth + (Int(screenWidth) - cloudLocationX);
+         } */
+        
+        tempInvader.position = CGPoint(x: CGFloat(cloudLocationX), y: CGFloat(cloudLocationY));
+        
+        addChild(tempInvader);
+        
+        invadersWhoCanFire.append(tempInvader)
+        
     }
-    else if ( Int(screenWidth) - cloudLocationX < invaderHalfWidth) {
-        cloudLocationX = cloudLocationX - invaderHalfWidth + (Int(screenWidth) - cloudLocationX);
-    } */
-    
-    tempInvader.position = CGPoint(x: CGFloat(cloudLocationX), y: CGFloat(cloudLocationY));
-    
-    addChild(tempInvader);
-    
-    invadersWhoCanFire.append(tempInvader)
-    
-}
     
     
     

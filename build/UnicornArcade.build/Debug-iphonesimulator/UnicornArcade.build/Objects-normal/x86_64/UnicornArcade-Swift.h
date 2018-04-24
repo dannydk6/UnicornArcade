@@ -248,7 +248,6 @@ SWIFT_CLASS("_TtC13UnicornArcade18GameViewController")
 
 SWIFT_CLASS("_TtC13UnicornArcade7Invader")
 @interface Invader : SKSpriteNode
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithTexture:(SKTexture * _Nullable)texture color:(UIColor * _Nonnull)color size:(CGSize)size SWIFT_UNAVAILABLE;
 @end

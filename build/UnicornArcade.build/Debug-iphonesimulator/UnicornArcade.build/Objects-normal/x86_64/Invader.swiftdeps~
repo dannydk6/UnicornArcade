@@ -25,6 +25,7 @@ depends-top-level:
 - "SKScene"
 - "SKSpriteNode"
 - !private "SKTexture"
+- "String"
 - !private "StringLiteralType"
 - !private "|"
 depends-member:
@@ -215,6 +216,7 @@ depends-member:
 - !private ["13UnicornArcade7InvaderC", "SKPhysicsBody"]
 - ["13UnicornArcade7InvaderC", "SKScene"]
 - !private ["13UnicornArcade7InvaderC", "SKTexture"]
+- ["13UnicornArcade7InvaderC", "String"]
 - ["13UnicornArcade7InvaderC", "deinit"]
 - ["13UnicornArcade7InvaderC", "fireBullet"]
 - ["13UnicornArcade7InvaderC", "init"]
@@ -292,6 +294,7 @@ depends-member:
 - !private ["So8NSObjectC", "SKPhysicsBody"]
 - ["So8NSObjectC", "SKScene"]
 - !private ["So8NSObjectC", "SKTexture"]
+- ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "addChild"]
 - !private ["So8NSObjectC", "categoryBitMask"]
 - !private ["So8NSObjectC", "clear"]
@@ -352,6 +355,7 @@ depends-member:
 - !private ["So6SKNodeC", "SKPhysicsBody"]
 - ["So6SKNodeC", "SKScene"]
 - !private ["So6SKNodeC", "SKTexture"]
+- ["So6SKNodeC", "String"]
 - !private ["So6SKNodeC", "addChild"]
 - ["So6SKNodeC", "fireBullet"]
 - ["So6SKNodeC", "init"]
@@ -379,6 +383,7 @@ depends-member:
 - !private ["So12SKSpriteNodeC", "SKPhysicsBody"]
 - ["So12SKSpriteNodeC", "SKScene"]
 - !private ["So12SKSpriteNodeC", "SKTexture"]
+- ["So12SKSpriteNodeC", "String"]
 - ["So12SKSpriteNodeC", ""]
 - ["So12SKSpriteNodeC", "fireBullet"]
 - ["So12SKSpriteNodeC", "init"]
@@ -472,6 +477,7 @@ depends-member:
 - !private ["So11UIResponderC", "SKPhysicsBody"]
 - ["So11UIResponderC", "SKScene"]
 - !private ["So11UIResponderC", "SKTexture"]
+- ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "addChild"]
 - ["So11UIResponderC", "fireBullet"]
 - ["So11UIResponderC", "init"]
@@ -628,4 +634,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/GLKit.framework/Headers/GLKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/SpriteKit.framework/Headers/SpriteKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e2a8884356c0d049f85c86e5b24315d0"
+interface-hash: "2f3182de4d8d0976d2f9d048da0a8476"
