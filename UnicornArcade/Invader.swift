@@ -13,8 +13,12 @@ class Invader: SKSpriteNode {
     var invaderRow = 0
     var invaderColumn = 0
     
-    init(image: String){
+    //
+    var movementType: String
+    
+    init(image: String, movement: String){
         let texture = SKTexture(imageNamed: image)
+        self.movementType = movement
         super.init(texture: texture, color: SKColor.clear, size: texture.size())
         self.name = "invader"
         self.physicsBody =
@@ -24,9 +28,11 @@ class Invader: SKSpriteNode {
         self.physicsBody?.categoryBitMask = CollisionCategories.Invader
         self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player
         self.physicsBody?.collisionBitMask = 0x0
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.movementType = "straight"
         super.init(coder: aDecoder)
     }
     

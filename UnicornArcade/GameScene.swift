@@ -23,11 +23,15 @@ struct CollisionCategories{
 
 // The main game scene. Acts as a delegate for physics collisions.
 class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    // images is used for parallax display
     let images : [UIImage] = [UIImage(named: "blueSky")!, UIImage(named: "blueSky")!, UIImage(named: "blueSky")!]
-    var background = SKSpriteNode(imageNamed: "blueSky")
+    
+    // This float is used to change the y value of sinusoidal sprites
     var sinThing: CGFloat = CGFloat(0)
+    
     // Enemy that moves in a sine wave
-    let sinEnemy:Invader = Invader(image: "invader1")
+    let sinEnemy:Invader = Invader(image: "invader1", movement: "sinusoidal")
     
     // Right now, just the number of clouds you have passed
     var score = 0
@@ -104,11 +108,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scoreText.zPosition = 1000
         
         addChild(scoreText)
-        
-        background.position = CGPoint(x: frame.size.width / 2, y: frame.size.height / 2)
-        background.zPosition = -10000
-        addChild(background)
-        
+    
         setupSinEnemy()
     }
     
@@ -277,7 +277,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let cloudLocationY = UInt32(screenHeight) - 40;
         
         let randomInvader = Int(arc4random_uniform(UInt32(invaderList.count)));
-        let tempInvader:Invader = Invader(image : invaderList[randomInvader]);
+        let tempInvader:Invader = Invader(image : invaderList[randomInvader],movement: "straight");
         let invaderHalfWidth = Float(tempInvader.size.width/2);
         var cloudLocationX = Float(arc4random_uniform(UInt32(screenWidth)));
         
